@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import ContactBook from 'react-contact-book';
-import {Switch, Route, useHistory} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import {connect} from 'react-redux';
-import logoWallet from './assets/images/contactBook/logo.svg';
+// import logoWallet from './assets/images/contactBook/logo.svg';
 // import logoMeet from './assets/images/contactBook/logoMeet.svg';
 // import logoChat from './assets/images/contactBook/logoChat.svg';
-import photo from './assets/images/contactBook/avatar.png';
+// import photo from './assets/images/contactBook/avatar.png';
 // Import Routes all
 import {userRoutes, authRoutes} from './routes/allRoutes';
 // Import all middleware
@@ -30,7 +30,7 @@ import {WalletModal} from './pages/WalletPage/WolletModal/WolletModal';
 import './assets/scss/styleGlobal.scss';
 
 const App = (props) => {
-  const history = useHistory();
+  // const history = useHistory();
 
   function getLayout() {
     let layoutCls = VerticalLayout;
