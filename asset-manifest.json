@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sumra-wallet/static/css/main.625c5393.chunk.css",
-    "main.js": "/sumra-wallet/static/js/main.ac282cb3.chunk.js",
-    "main.js.map": "/sumra-wallet/static/js/main.ac282cb3.chunk.js.map",
+    "main.js": "/sumra-wallet/static/js/main.44d12a2f.chunk.js",
+    "main.js.map": "/sumra-wallet/static/js/main.44d12a2f.chunk.js.map",
     "runtime-main.js": "/sumra-wallet/static/js/runtime-main.4a0600d7.js",
     "runtime-main.js.map": "/sumra-wallet/static/js/runtime-main.4a0600d7.js.map",
     "static/css/2.c7a3ec30.chunk.css": "/sumra-wallet/static/css/2.c7a3ec30.chunk.css",
@@ -120,7 +120,6 @@
     "static/media/link.8aa121ae.svg": "/sumra-wallet/static/media/link.8aa121ae.svg",
     "static/media/lock.d382bc5e.svg": "/sumra-wallet/static/media/lock.d382bc5e.svg",
     "static/media/registration.scss": "/sumra-wallet/static/media/slideMin.7c338b68.jpg",
-    "static/media/logo.dbd6e885.svg": "/sumra-wallet/static/media/logo.dbd6e885.svg",
     "static/media/mark.4aa22546.svg": "/sumra-wallet/static/media/mark.4aa22546.svg",
     "static/media/meet.d8ebf0b9.svg": "/sumra-wallet/static/media/meet.d8ebf0b9.svg",
     "static/media/messanger.00fc6f0b.svg": "/sumra-wallet/static/media/messanger.00fc6f0b.svg",
@@ -182,6 +181,6 @@
     "static/css/2.c7a3ec30.chunk.css",
     "static/js/2.18a1ab5b.chunk.js",
     "static/css/main.625c5393.chunk.css",
-    "static/js/main.ac282cb3.chunk.js"
+    "static/js/main.44d12a2f.chunk.js"
   ]
 }
