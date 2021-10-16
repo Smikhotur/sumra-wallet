@@ -1,0 +1,436 @@
+/**
+    Variables
+*/
+$AccentOrangeColor: #f8913a;
+$AccentGreenColor: #419681;
+$AccentRedColor: #e1604d;
+$GrayTextDescriptionColor: #4d505f;
+$WhiteColor: #ffffff;
+$BlackColor: #202020;
+$FooterColor: #111111;
+$HeaderColor: #ffffff;
+$MainColor: #ffffff;
+$h3LabelColor: #373737;
+$LineColor: #7b7b7b;
+$BorderPhoneInput: #dbdbdb;
+$BorderBenefits: 2px dashed #eeeeee;
+$PhoneInputLegend: #8b8b8b;
+
+$HeaderHeight: 64px;
+$FooterHeight: 153px;
+$MainMinHeight: calc(100vh - #{$HeaderHeight});
+
+$BackgroundButtonLogin: linear-gradient(
+    219.49deg,
+    #f89949 24.58%,
+    #f5872a 64.12%
+  ),
+  #f8913a;
+
+$FontSFDisplay: "SF UI Display";
+$FontSFText: "SF UI Text";
+
+/**
+    Styles
+*/
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.authentification-form {
+  max-width: 340px;
+  margin: auto;
+
+  &.login-form,
+  &.user-signup-form,
+  &.verification-code-form {
+    form {
+      margin-top: 60px;
+    }
+
+    .sumra-input-fieldset {
+      margin-top: 34px;
+    }
+
+    .sumra-Button {
+      margin-top: 30px;
+    }
+  }
+
+  &.verification-code-form {
+    .sumra-react-code-input {
+      margin-top: 30px;
+    }
+  }
+}
+
+.sumra-social-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  padding-top: 12px;
+  margin: 0;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.sumra-header {
+  z-index: 1;
+  position: relative;
+  height: $HeaderHeight;
+  background: $HeaderColor;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .logotype {
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+      width: 161px;
+      height: 46px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &:before {
+      background-image: url("../../../images/sumra/Sumra_Chat_Logo.svg");
+    }
+
+    &:after {
+      display: none;
+      background-image: url("../../../images/sumra/Sumra_Chat_Logo_hover.svg");
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &:before {
+        display: none;
+      }
+
+      &:after {
+        display: table;
+      }
+    }
+  }
+}
+
+.sumra-main {
+  min-height: $MainMinHeight;
+  background-color: $MainColor;
+  background-image: url("../../../images/sumra/pattern.svg");
+
+  .h1-title,
+  .h2-subtitle,
+  .h2-label {
+    font-family: $FontSFDisplay;
+    font-style: normal;
+    line-height: 100%;
+    text-align: center;
+    color: $BlackColor;
+  }
+
+  .h1-title {
+    padding-top: 45px;
+    font-weight: bold;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .h2-subtitle {
+    margin: 20px 0;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .h2-label {
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  .h3-label {
+    // padding-top: 25px;
+    font-family: $FontSFDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $h3LabelColor;
+  }
+}
+
+.sumra-footer {
+  height: $FooterHeight;
+  background: $FooterColor;
+}
+
+.sumra-line {
+  width: 100%;
+  height: 45px;
+  background-image: url("../../../images/sumra/Line.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.sumra-phone-fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  margin-top: 12px;
+  padding-bottom: 4px;
+  background: $WhiteColor;
+  border: 2px solid $BorderPhoneInput;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  legend {
+    margin-left: 15px;
+
+    padding: 0 5px;
+    font-family: $FontSFDisplay;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: $PhoneInputLegend;
+  }
+
+  .PhoneInput {
+    margin-left: 16px;
+
+    .PhoneInputInput {
+      outline: 0;
+      border: 0;
+      height: 19px;
+      font-family: $FontSFDisplay;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $BlackColor;
+
+      &::placeholder {
+        color: $PhoneInputLegend;
+      }
+    }
+  }
+
+  .sumra-phone-send {
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+
+    img {
+      width: 16px;
+    }
+  }
+}
+
+.sumra-input-fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  margin-top: 12px;
+  padding-bottom: 4px;
+  background: $WhiteColor;
+  border: 2px solid $BorderPhoneInput;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  &.available {
+    border: 2px solid $AccentOrangeColor;
+  }
+
+  legend {
+    margin-left: 15px;
+    padding: 0 5px;
+    font-family: $FontSFDisplay;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: $PhoneInputLegend;
+  }
+
+  input {
+    flex-grow: 1;
+    outline: 0;
+    border: 0;
+    height: 19px;
+    font-family: $FontSFDisplay;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $BlackColor;
+
+    &::placeholder {
+      font-family: $FontSFText;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: $PhoneInputLegend;
+    }
+  }
+
+  &-icon {
+    margin-left: 15px;
+    margin-right: 8px;
+  }
+
+  &-icon-right {
+    margin-right: 16px;
+  }
+}
+
+.sumra-input-message {
+  margin-left: 10px;
+  margin-top: 9px;
+
+  &.error {
+    color: $AccentRedColor;
+  }
+
+  &.success {
+    color: $AccentGreenColor;
+  }
+}
+
+.sumra-Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: $WhiteColor;
+  background: $BackgroundButtonLogin;
+  border-radius: 8px;
+
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.07));
+
+  img {
+    position: relative;
+    left: -36px;
+
+    &.sumra-Button-icon-left {
+      position: absolute;
+      left: 28px;
+    }
+  }
+
+  span {
+    font-family: $FontSFText;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.sumra-Benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  margin-top: 40px;
+  padding: 15px 20px;
+
+  border: $BorderBenefits;
+  border-radius: 8px;
+
+  .sumra-Benefit-text {
+    &:before {
+      content: "";
+      display: table;
+      clear: both;
+      width: 12px;
+      height: 9px;
+      background-image: url("../../../images/sumra/Vector.svg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.sumra-Benefits-draft {
+  width: 340px;
+  height: 106px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.sumra-link-forgotPassword,
+.sumra-link-createUser {
+  margin-top: 25px;
+  font-family: $FontSFDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 100%;
+}
+
+.sumra-link-forgotPassword {
+  float: left;
+  color: $AccentOrangeColor;
+  cursor: pointer;
+}
+
+.sumra-link-createUser {
+  float: right;
+  color: $GrayTextDescriptionColor;
+  span {
+    margin-left: 4px;
+    color: $AccentOrangeColor;
+    cursor: pointer;
+  }
+}
+
+.sumra-react-code-input {
+  width: 100% !important;
+
+  > div[class^="styles_react-code-input"] {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      &:focus {
+        border: 2px solid $AccentOrangeColor;
+      }
+
+      &:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:last-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      border: 2px solid $BorderPhoneInput;
+    }
+  }
+}

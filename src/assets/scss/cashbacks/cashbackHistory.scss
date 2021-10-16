@@ -1,0 +1,172 @@
+.cashbacks-history {
+  &__title {
+    margin-top: 25px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #2E3140;
+  }
+
+  &__block-btn-scroll {
+    @media(max-width: 570px) {
+      overflow-x: scroll;
+    }
+  }
+
+  &__block-btn {
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffffff;
+    border-radius: 6px;
+    width: 545px;
+    height: 43px;
+  }
+
+  &__btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: #828496;
+  }
+
+  &__btn-active {
+    padding: 8px 20px;
+    background: #7165E3;
+    box-shadow: 0px 10px 20px rgba(97, 105, 255, 0.1), 0px 10px 20px rgba(97, 105, 255, 0.1);
+    border-radius: 4px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 100%;
+    color: #FFFFFF;
+  }
+
+  &__block-table {
+    position: relative;
+    display: flex;
+    padding-top: 20px;
+
+    @media(max-width: 788px) {
+      overflow-x: scroll;
+    }
+  }
+
+  &__table {
+    border-radius: 7px 7px 0px 0px !important;
+    width: 100%;
+  }
+
+  &__block-table-fixed {
+    width: 100%;
+
+    @media(max-width: 788px) {
+      width: 764px !important;
+    }
+  }
+
+  &__th {
+    text-align: left !important;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #828496;
+
+    background: #FAFAFC;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px -2px 0px #EDEDEE;
+    cursor: default;
+    white-space: nowrap;
+
+  }
+
+  &__td {
+    text-align: left !important;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #2E3140;
+    background: #FFFFFF;
+    box-shadow: inset 0px -2px 0px #F0F0F6;
+    cursor: default;
+  }
+
+  &__td-img {
+    margin-right: 10px;
+  }
+
+  &__td-color {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #5C5D6A;
+  }
+
+  &__td-img-dolar {
+    position: relative;
+    top: -2px;
+    margin-right: 6px;
+  }
+
+  &__arrow {
+    position: relative;
+    margin-left: 10px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #7165E3;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -15px;
+      top: 5px;
+      width: 8px;
+      height: 8px;
+      border-top: 1px solid #7165E3;
+      border-left: 1px solid #7165E3;
+      transform: rotate(135deg);
+      cursor: pointer;
+    }
+  }
+
+  &__cashbacks-img {
+    margin-left: 25px;
+    align-self: flex-start;
+
+
+    @media(max-width: 1345px) {
+      position: absolute;
+      top: -205px;
+      right: 0;
+      z-index: -1;
+    }
+
+    @media(max-width: 788px) {
+      display: none;
+    }
+  }
+}

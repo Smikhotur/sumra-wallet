@@ -1,0 +1,146 @@
+.hub-page {
+  margin-top: 20px;
+  &__search-inner {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__search {
+    width: 545px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid hsla(230, 16%, 22%, 0.5);
+    background: inherit;
+    outline: none;
+    height: 35px;
+    padding-right: 70px;
+
+    &::placeholder {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 28px;
+      color: #444D56;
+      padding-left: 10px;
+    }
+
+    @media(max-width: 570px) {
+      display: inline-block;
+      width: 445px;
+      display: flex;
+    }
+
+    @media(max-width: 470px) {
+      display: inline-block;
+      width: 345px;
+      display: flex;
+    }
+
+    @media(max-width: 370px) {
+      display: inline-block;
+      width: 295px;
+      display: flex;
+    }
+  }
+
+  &__search-img {
+    position: absolute;
+    right: 40px;
+    top: 2px;
+    cursor: pointer;
+  }
+
+  &__close-img {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    cursor: pointer;
+  }
+
+  &__block-icons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    gap: 75px 20px;
+    margin-top: 45px;
+
+    @media(max-width: 638px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 45px 20px;
+    }
+
+    @media(max-width: 406px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 45px 20px;
+    }
+  }
+
+  &__inner-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(90deg, #BB9BF1 0%, #887BF2 100%);
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    justify-self: center;
+    transition: all 0.4s;
+
+    &:nth-child(9) {
+      div {
+        position: relative;
+        right: 9px;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+
+  &__img {
+    &:hover {
+      animation: 1.2s ease-in-out 0s normal
+        none infinite running trambling-animation;
+    }
+  }
+
+  &__title-icon {
+    position: relative;
+    top: 15px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #2E3140;
+    text-align: center;
+  }
+}
+
+@keyframes trambling-animation {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  20%,
+  40% {
+    transform: rotate(10deg);
+  }
+}

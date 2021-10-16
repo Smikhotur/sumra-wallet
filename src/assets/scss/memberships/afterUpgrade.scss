@@ -1,0 +1,99 @@
+.memberships {
+  &__after-upgrade-wrapper{
+    padding: 120px 10px;
+    background: #FAFBFC;
+    background-blend-mode: multiply, normal, normal;
+
+    @media (max-width: 533px) {
+      padding: 60px 10px;
+    }
+  }
+
+  &__after-upgrade {
+    max-width: 1540px;
+    margin: 0 auto;
+  }
+
+  &__after-upgrade-title {
+    margin-bottom: 25px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #202D39;
+  }
+
+  &__after-upgrade-subtitle {
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    color: #2F5BE9;
+  }
+
+  &__after-upgrade-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 68px;
+
+    @media (max-width: 1024px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__after-upgrade-box {
+    max-width: 381px;
+    text-align: center;
+  }
+
+  &__after-upgrade-img {
+    margin-bottom: 36px;
+  }
+
+  &__after-upgrade-sub {
+    margin-bottom: 17px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #202D39;
+  }
+
+  &__after-upgrade-text {
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #4E5A66;
+    opacity: 0.85;
+  }
+
+  &__after-upgrade-small {
+    width: 271px;
+
+    @media (max-width: 1024px) {
+      width: 381px;
+    }
+
+    @media (max-width: 407px) {
+      width: 100%;
+    }
+  }
+
+  &__after-upgrade-arrow {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

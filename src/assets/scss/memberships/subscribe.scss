@@ -1,0 +1,139 @@
+.memberships {
+  &__subscribe-wrapper {
+    padding: 112px 10px 0;
+    background: url(../../images/memberships/Footer.svg);
+    background-position: top;
+    background-size: cover;
+
+    @media (max-width: 602px) {
+      padding: 72px 10px 0;
+    }
+  }
+
+  &__subscribe-block {
+    max-width: 1540px;
+    margin: 0 auto;
+  }
+
+  &__subscribe-title {
+    margin-bottom: 50px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+  }
+
+  &__subscribe-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 122px;
+
+    @media (max-width: 602px) {
+      margin-bottom: 62px;
+    }
+  }
+
+  &__subscribe-box {
+    margin-bottom: 30px;
+  }
+
+  &__subscribe-img-sociale {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 550px) {
+      width: 40px;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 374px) {
+      width: 30px;
+      margin-left: 10px;
+    }
+  }
+
+  &__subscribe-subtitle {
+    margin-bottom: 30px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 15px;
+    border-top: 1px solid #2F5BE9;
+    box-shadow: 0px -2px 0px rgba(239, 244, 251, 0.25);
+
+
+    @media (max-width: 633px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__footer-copy {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 15px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+
+    @media (max-width: 362px) {
+      font-size: 13px;
+    }
+  }
+
+  &__footer-box {
+    display: flex;
+
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    text-decoration-line: underline;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+
+    @media (max-width: 633px) {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 362px) {
+      font-size: 13px;
+    }
+  }
+
+  &__footer-policy {
+    margin-right: 25px;
+    cursor: pointer;
+  }
+
+  &__footer-terms {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,17 @@
+<svg width="115" height="114" viewBox="0 0 115 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="57.5" cy="57" r="56" stroke="#C0C6D3" stroke-width="2" stroke-linecap="round" stroke-dasharray="0 11"/>
+<circle cx="57.5" cy="57" r="49" fill="#545F75"/>
+<path d="M42 46V52" stroke="white" stroke-width="2"/>
+<path d="M46.5 57.5H51.5" stroke="white" stroke-width="2"/>
+<path d="M59.5 60L67.5 69" stroke="white" stroke-width="2"/>
+<path d="M66.5 72.5H61.5" stroke="white" stroke-width="2"/>
+<circle cx="42" cy="41.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="57" cy="41.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="71" cy="41.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="42" cy="57.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="57" cy="57.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="71" cy="57.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="42" cy="72.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="57" cy="72.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+<circle cx="71" cy="72.5" r="4.5" stroke="white" stroke-width="2" stroke-linecap="square"/>
+</svg>

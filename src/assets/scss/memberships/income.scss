@@ -1,0 +1,62 @@
+.memberships {
+  &__income {
+    background: #01081F;
+    padding: 100px 10px 160px 10px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      padding: 60px 10px 100px 10px;
+    }
+  }
+
+  &__inner-income {
+    max-width: 1540px;
+    margin: 0 auto;
+  }
+
+  &__income-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    gap: 20px;
+
+    @media (max-width: 1060px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__income-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__income-code-title {
+    margin-top: 27px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__income-code-subtitle {
+    margin-top: 11px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #7E8085;
+  }
+
+  &__arrow-big {
+    @media (max-width: 1045px) {
+      display: none;
+    }
+  }
+}

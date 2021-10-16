@@ -1,0 +1,22 @@
+.emergence-name {
+  position: absolute;
+  opacity: 0;
+  top: -13px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.emergence-name-visible {
+  position: absolute;
+  top: -13px;
+  text-align: center;
+  opacity: 1;
+  width: 100%;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 1px;
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

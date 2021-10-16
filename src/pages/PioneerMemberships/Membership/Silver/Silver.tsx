@@ -1,0 +1,259 @@
+import React, {FC} from 'react';
+import classNames from 'classnames';
+import {useSelector, RootStateOrAny, useDispatch} from 'react-redux';
+import checkTrue from '../../../../assets/images/memberships/check-true.svg';
+import checkLight from '../../../../assets/images/memberships/check-light.svg';
+import {Link} from 'react-router-dom';
+import {actions} from '../../../../store/PioneerMemberships/actions';
+
+export const Silver: FC = () => {
+  const activeForm = useSelector(
+    (state: RootStateOrAny) => state.pioneerReducer.activeUpdrade
+  );
+  const activeSilver = useSelector(
+    (state: RootStateOrAny) => state.pioneerReducer.activeSilver
+  );
+  const activeGold = useSelector(
+    (state: RootStateOrAny) => state.pioneerReducer.activeGold
+  );
+  const dispatch = useDispatch();
+
+  const buttonActivation = ({target: {name}}) => {
+    dispatch(actions.nameBronzeButton(name));
+    dispatch(actions.activeUpdradeButton(!activeForm));
+  };
+
+  return (
+    <div
+      className={classNames('memberships__card', {
+        'memberships__card-visible': activeSilver,
+      })}
+    >
+      <h3
+        className={classNames('memberships__card-title', {
+          'memberships__card-title-visible': activeSilver,
+        })}
+      >
+        Silver
+      </h3>
+      <div
+        className={classNames('memberships__card-subtitle', {
+          'memberships__card-subtitle-visible': activeSilver,
+        })}
+      >
+        <span>$199</span>
+        <sub className="memberships__card-subtitle-sub">/ yr</sub>
+      </div>
+      <div className="memberships__card-subtitle-gray">Billed annually</div>
+      <ul className="memberships__card-list">
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            Withdrawal threshold -{' '}
+            <span
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              $250
+            </span>
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            Rentpayments rebates -{' '}
+            <span
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              15%
+            </span>
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            For each Referral you get{' '}
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              $9
+            </strong>
+            . <br />
+            Your referred contacts get{' '}
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              $6
+            </strong>
+            .
+            <br />
+            Earn Unlimited
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            DIVITS reward for 1000 hours
+            <br />+ Added Bonus{' '}
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              50%
+            </strong>
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              Merge
+            </strong>{' '}
+            all earnings to <br /> withdraw
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            Withdrawal fee -{' '}
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              0%
+            </strong>
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              Redeem Rewards
+            </strong>{' '}
+            - To <br />
+            Cash, $DIVITS Token, Bitcoin,
+            <br /> ETH, SOL
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              $DIVITS Token
+            </strong>{' '}
+            - Earn,
+            <br /> Exchange, Trade
+          </div>
+        </li>
+        <li className="memberships__card-item">
+          <img
+            className="memberships__card-item-img"
+            src={activeSilver ? checkTrue : checkLight}
+            alt=""
+          />
+          <div>
+            <strong
+              className={
+                !activeSilver
+                  ? 'memberships__card-item-black'
+                  : 'memberships__card-item-color'
+              }
+            >
+              Cryptocurrencies
+            </strong>{' '}
+            -<br /> Convert to Crypto
+          </div>
+        </li>
+      </ul>
+      <Link
+        to={{pathname: '/pioneer_memberships', search: '?payment-details=true'}}
+      >
+        <button
+          disabled={activeSilver}
+          onClick={(event) => {
+            buttonActivation(event);
+          }}
+          name="Silver"
+          className={
+            !activeGold
+              ? 'memberships__card-btn'
+              : 'memberships__card-btn-opacity'
+          }
+        >
+          {activeSilver ? 'Current plan' : 'Upgrade plan'}
+        </button>
+      </Link>
+    </div>
+  );
+};

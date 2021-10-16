@@ -1,0 +1,68 @@
+.memberships {
+
+  &__benefit {
+    background: url(../../images/memberships/Drive.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    padding: 100px 10px 120px 10px;
+  }
+
+  &__block-benefit {
+    max-width: 1540px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__benefit-subtitle {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.75;
+  }
+
+  &__benefit-btn {
+    margin: 0 auto;
+    width: 278px;
+    height: 49px;
+    background: linear-gradient(339.03deg, #B88A35 13.85%, #E6CB71 82.72%);
+    border-radius: 4px;
+
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  &__benefit-text {
+    margin-top: 45px;
+    font-family: Aileron;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.75;
+  }
+}

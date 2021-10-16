@@ -1,0 +1,109 @@
+.dashboard {
+  &__wallets-inner {
+
+  }
+
+  &__wallets-title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2E3140;
+  }
+
+  &__wallets-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 0;
+
+    @media(max-width: 673px) {
+      justify-content: center;
+    }
+  }
+
+  &__wallets-item {
+    width: 310px;
+    padding: 22px;
+    list-style-type: none;
+    border-radius: 12px;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__wallet-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: DM Sans;
+  }
+
+  &__name-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__name-card {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  &__number-wallet {
+    margin: 15px 0;
+    font-family: DM Mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  &__balance {
+    margin-bottom: 5px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+
+  &__total {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+
+  &__wallets-pagination {
+    width: 75px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    line-height: 100%;
+    color: #7165E3;
+    cursor: pointer;
+
+    &::after {
+      content: "\2192";
+      position: relative;
+      top: -2px;
+      display: flex;
+      font-size: 20px;
+    }
+  }
+}

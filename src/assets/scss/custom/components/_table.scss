@@ -1,0 +1,305 @@
+//
+// _table.scss
+//
+
+.table {
+  th,
+  td {
+    font-weight: $font-weight-bold;
+    text-align: center;
+    vertical-align: middle;
+    &:nth-child(2) {
+      text-align: left;
+    }
+    &:last-child {
+      span.table-dot {
+        border-radius: 50%;
+        display: inline-block;
+        position: static;
+        width: 8px;
+        height: 8px;
+        left: 0px;
+        top: calc(50% - 8px / 2);
+        margin-right: 10px;
+
+        /* Danger / #F16868 */
+      }
+      span.overdue {
+        background: #f16868;
+      }
+      /* Warning / #FFAF2E */
+
+      span.pending {
+        background: #ffaf2e;
+      }
+      /* Success / #16AB6B */
+
+      span.complete {
+        background: #16ab6b;
+      }
+    }
+  }
+
+  tr:hover {
+    cursor: pointer;
+  }
+}
+
+//Table centered
+.table-centered {
+  td,
+  th {
+    vertical-align: middle !important;
+  }
+}
+
+.table-nowrap {
+  th,
+  td {
+    white-space: nowrap;
+  }
+}
+.table-txt {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.25px;
+  text-transform: capitalize;
+
+  /* Dark / #334659 */
+
+  color: #334659;
+}
+
+.table-th-txt {
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.25px;
+
+  /* Dark / #334659 */
+
+  color: #334659;
+}
+.table-td-img {
+  display: inline-block;
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+}
+
+.table-td-img:hover {
+  cursor: pointer;
+}
+.table-bg-tab {
+  background: #ebecf0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  height: 36px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  position: static;
+  height: 36px;
+  width: 153px;
+  left: 305px;
+  right: 1072px;
+  top: 1px;
+  vertical-align: middle;
+
+  /* #EBECF0 */
+
+  background: #ebecf0;
+  border-radius: 4px;
+  cursor: pointer;
+  .icon-Flag,
+  .icon-Calendar {
+    margin-right: 20px;
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
+  .icon-Arrow-Down {
+    margin-left: 20px;
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
+}
+.dropbtn-calendar {
+  position: static;
+  height: 36px;
+  width: 264px;
+  left: 305px;
+  right: 1072px;
+  top: 1px;
+  vertical-align: middle;
+
+  /* #EBECF0 */
+
+  background: #ebecf0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  .icon-Calendar {
+    margin-right: 20px;
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
+  .icon-Arrow-Down {
+    margin-left: 20px;
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #0061ff;
+  color: #ffffff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Archivo;
+  color: #5e6c84;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+
+  /* Links inside the dropdown */
+  li {
+    color: black;
+    padding: 8px 4px;
+    text-decoration: none;
+    display: block;
+    font-family: Archivo;
+    color: #5e6c84;
+    border-radius: 4px;
+    text-align: center;
+
+    /* Change color of dropdown links on hover */
+
+    &:hover {
+      background-color: #0061ff;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.table-trash {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+
+  position: static;
+  width: 36px;
+  height: 36px;
+  left: 198px;
+  top: 0px;
+
+  /* #EBECF0 */
+
+  background: #ebecf0;
+  border-radius: 4px;
+  i {
+    margin: auto;
+    font-size: 1.25rem;
+    vertical-align: middle;
+  }
+}
+
+.table-selected-item {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 5px;
+  bottom: 0%;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+
+  /* Primary / #0061FF */
+
+  background: #0061ff;
+  border-radius: 4px;
+  span {
+    position: absolute;
+    left: 33.33%;
+    right: 27.78%;
+    top: 11.11%;
+    bottom: 11.11%;
+
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12.5px;
+    line-height: 14px;
+    /* identical to box height, or 112% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* white */
+
+    color: #ffffff;
+  }
+}
+
+.table-selected-container {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  .table-container-txt {
+    display: inline-block;
+    margin: auto 30px 0px;
+    width: 55px;
+    height: 14px;
+    left: 28px;
+    top: calc(50% - 14px / 2);
+
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+
+    letter-spacing: 0.25px;
+
+    /* Dark / #615F7B */
+
+    color: #6a737d;
+  }
+}
