@@ -1,6 +1,6 @@
 # Sumra Wallet
 
-- [DEMO LINK](https://Smikhotur.github.io/sumra-wallets/)
+- [DEMO LINK](https://Smikhotur.github.io/sumra-wallet/)
 
   - Write a todo and add it to the list using the enter key.
   - Move the cursor to the right of the todo, click on the cross that appears and delete the todo.
