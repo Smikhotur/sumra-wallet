@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/sumra-wallets/static/css/main.100388b6.chunk.css",
-    "main.js": "/sumra-wallets/static/js/main.e792f11a.chunk.js",
-    "main.js.map": "/sumra-wallets/static/js/main.e792f11a.chunk.js.map",
+    "main.js": "/sumra-wallets/static/js/main.42e4a43b.chunk.js",
+    "main.js.map": "/sumra-wallets/static/js/main.42e4a43b.chunk.js.map",
     "runtime-main.js": "/sumra-wallets/static/js/runtime-main.dd580177.js",
     "runtime-main.js.map": "/sumra-wallets/static/js/runtime-main.dd580177.js.map",
     "static/css/2.fca71c59.chunk.css": "/sumra-wallets/static/css/2.fca71c59.chunk.css",
-    "static/js/2.6f3e015e.chunk.js": "/sumra-wallets/static/js/2.6f3e015e.chunk.js",
-    "static/js/2.6f3e015e.chunk.js.map": "/sumra-wallets/static/js/2.6f3e015e.chunk.js.map",
+    "static/js/2.9a1afe43.chunk.js": "/sumra-wallets/static/js/2.9a1afe43.chunk.js",
+    "static/js/2.9a1afe43.chunk.js.map": "/sumra-wallets/static/js/2.9a1afe43.chunk.js.map",
     "index.html": "/sumra-wallets/index.html",
     "static/css/2.fca71c59.chunk.css.map": "/sumra-wallets/static/css/2.fca71c59.chunk.css.map",
     "static/css/main.100388b6.chunk.css.map": "/sumra-wallets/static/css/main.100388b6.chunk.css.map",
-    "static/js/2.6f3e015e.chunk.js.LICENSE.txt": "/sumra-wallets/static/js/2.6f3e015e.chunk.js.LICENSE.txt",
+    "static/js/2.9a1afe43.chunk.js.LICENSE.txt": "/sumra-wallets/static/js/2.9a1afe43.chunk.js.LICENSE.txt",
     "static/media/1.489c84e0.svg": "/sumra-wallets/static/media/1.489c84e0.svg",
     "static/media/GlobalEarningsMain.scss": "/sumra-wallets/static/media/1234.d2f270a1.svg",
     "static/media/1st.8f73f925.svg": "/sumra-wallets/static/media/1st.8f73f925.svg",
@@ -180,8 +180,8 @@
   "entrypoints": [
     "static/js/runtime-main.dd580177.js",
     "static/css/2.fca71c59.chunk.css",
-    "static/js/2.6f3e015e.chunk.js",
+    "static/js/2.9a1afe43.chunk.js",
     "static/css/main.100388b6.chunk.css",
-    "static/js/main.e792f11a.chunk.js"
+    "static/js/main.42e4a43b.chunk.js"
   ]
 }
