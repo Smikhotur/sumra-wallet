@@ -1,0 +1,90 @@
+.contact-book {
+  &__item-sumra-chat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    margin-bottom: 7px;
+    padding-left: 28px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: $gray-text-chat;
+    text-decoration: none;
+
+    i {
+      color: $gray-text-chat;
+      font-size: 18px;
+    }
+
+    span {
+      color: $gray-text-chat;
+    }
+
+    &:hover {
+      background: #fff;
+      color: $text-hover-chat;
+      border-radius: 8px;
+      margin: 0 16px 7px;
+      padding: 0 12px;
+
+      span {
+        color: $text-hover-chat;
+      }
+
+      i {
+        font-size: 18px;
+        color: $yellow-chat;
+      }
+    }
+  }
+
+  &__item-active-sumra-chat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 44px;
+    margin: 0 16px 7px;
+    padding: 0 12px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    background: #fff;
+    border-radius: 8px;
+
+    span {
+      color: $text-hover-chat;
+    }
+
+    i {
+      color: $yellow-chat;
+      font-size: 18px;
+    }
+  }
+  
+  &__unread-sumra-chat {
+    position: relative;
+    top: -6px;
+    width: 26px;
+    height: 17px;
+    background: #B0B7C3;
+    border-radius: 30px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+}

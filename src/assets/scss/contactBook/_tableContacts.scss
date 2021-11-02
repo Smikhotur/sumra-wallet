@@ -1,0 +1,900 @@
+.contact-book {
+
+  &__table-block {
+    border-radius: 3px;
+    min-height: calc(100vh - 225px) !important;
+  }
+
+  &__table-scroll {
+    box-sizing: border-box;
+    min-height: calc(100vh - 225px) !important;
+    position: relative;
+    border-radius: 4px;
+    @media (max-width: 1262px) {
+      overflow: scroll;
+    }
+  }
+
+  &__table-wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 26px;
+    min-width: 950px;
+    white-space: nowrap;
+    border-collapse: collapse;
+
+    tbody {
+      box-shadow: 0px 5px 15px rgba(88, 86, 104, 0.12);
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+
+  &__list-alph {
+    position: absolute;
+    z-index: 100;
+    list-style-type: none;
+    right: 0;
+    top: 37px;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(240, 240, 245, 0.75), rgba(240, 240, 245, 0.75)), #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(88, 86, 104, 0.12);
+  }
+
+  &__item-alph {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    cursor: pointer;
+    color: #4c4e5a;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__item-alph-true-sumra-wallet {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    cursor: pointer;
+    color: $pink-text-wallet;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__item-alph-true-sumra-meet {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    cursor: pointer;
+    color: $blu-text-meet;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__item-alph-true-sumra-chat {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    cursor: pointer;
+    color: $yellow-chat;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__head-table {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #2E3140;
+    background-color: inherit;
+  
+    th {
+      padding-bottom: 15px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &__thead-btn-block-sumra-wallet {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    
+    div {
+      // padding: 0;
+      // padding-left: 28px;
+      i{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: $pink-text-wallet;
+      }
+    }
+  }
+
+
+  &__thead-btn-block-sumra-meet {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    
+    div {
+      i{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: $blu-text-meet;
+      }
+    }
+  }
+
+  &__thead-btn-block-sumra-chat {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    
+    div {
+      i{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: $yellow-chat;
+      }
+    }
+  }
+
+  &__all-checkbox-header-sumra-wallet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $pink-text-wallet;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 12px;
+      background: #FFFFFF;
+    }
+  }
+
+  &__all-checkbox-header-sumra-meet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $blu-text-meet;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 12px;
+      background: #FFFFFF;
+    }
+  }
+
+  &__all-checkbox-header-sumra-chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $yellow-chat;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 12px;
+      background: #FFFFFF;
+    }
+  }
+
+  &__all-header-checked-sumra-wallet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7165E3;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    &::before {
+      content: "\2713";
+      position: absolute;
+      display: block;
+      color: #ffffff;
+    }
+  }
+
+  &__all-header-checked-sumra-meet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7165E3;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    &::before {
+      content: "\2713";
+      position: absolute;
+      display: block;
+      color: #ffffff;
+    }
+  }
+
+  &__all-header-checked-sumra-chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $yellow-chat;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    &::before {
+      content: "\2713";
+      position: absolute;
+      display: block;
+      color: #ffffff;
+    }
+  }
+
+  &__inner-checkbox-arrow {
+    position: relative;
+    z-index: 1;
+    left: 15px;
+    cursor: pointer;
+  }
+
+  &__checkbox-arrow-sumra-wallet {
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid $pink-text-wallet;
+    border-bottom: 2px solid $pink-text-wallet;
+    transform: rotate(-45deg);
+  }
+
+  &__checkbox-arrow-sumra-meet {
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid $blu-text-meet;
+    border-bottom: 2px solid $blu-text-meet;
+    transform: rotate(-45deg);
+  }
+
+  &__checkbox-arrow-sumra-chat {
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid $yellow-chat;
+    border-bottom: 2px solid $yellow-chat;
+    transform: rotate(-45deg);
+  }
+
+  &__th {
+    position: relative;
+    text-align: start !important;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #2E3140;
+    padding-left: 12px;
+
+    &:last-child {
+      width: 200px;
+    }
+  }
+
+  &__arrow-img {
+    margin-left: 20px;
+  }
+
+  &__th-email {
+    background: url(../../images/contactBook/Sort.svg);
+    background-repeat: no-repeat;
+    background-position: 68px center;
+    cursor: pointer;
+  }
+
+  &__th-phone {
+    display: flex;
+    text-align: center;
+    background: url(../../images/contactBook/background.svg);
+    background-repeat: no-repeat;
+    background-position: 143px center;
+    cursor: pointer;
+  }
+
+  &__th-social {
+    background: url(../../images/contactBook/Sort.svg);
+    background-repeat: no-repeat;
+    background-position: 172px center;
+    cursor: pointer;
+  }
+
+  &__th-groups {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    background: url(../../images/contactBook/Sort.svg);
+    background-repeat: no-repeat;
+    background-position: 84px center;
+    cursor: pointer;
+  }
+
+  &__tr-alphabet {
+    height: 40px;
+    background: rgb(250, 250, 252);
+    border-bottom: 1px solid #EBECF0;
+
+    td {
+      padding: 4px 12px 4px;
+      text-align: start !important;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      cursor: default;
+      font-size: 14px;
+      color: #2E3140;
+      
+      &:first-child {
+        display: flex;
+        height: 40px;
+        align-items: center;
+      }
+    }
+  }
+
+  &__input-checkbox-sumra-wallet {
+    display: none;
+  }
+
+  &__input-checkbox-sumra-meet {
+    display: none;
+  }
+
+  &__input-checkbox-sumra-chat {
+    display: none;
+  }
+
+  &__td-checkbox-sumra-wallet {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #EBECF0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    line-height: 20px !important;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: -3px;
+      left: 3px;
+    }
+  }
+
+  &__td-checkbox-sumra-meet {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #EBECF0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    line-height: 20px !important;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: -3px;
+      left: 3px;
+    }
+  }
+
+  &__td-checkbox-sumra-chat {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #EBECF0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    line-height: 20px !important;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: -3px;
+      left: 3px;
+    }
+  }
+
+  &__avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    background: rgb(241, 232, 236);
+    cursor: pointer;
+  }
+
+  &__full-name {
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+
+  &__td-text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #2E3140;
+    height: 20px;
+
+  }
+
+  &__email {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 14px;
+    line-height: 100%;
+    color: #4C4E5A;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__img-flag {
+    margin-right: 7px;
+    cursor: pointer;
+  }
+
+  &__phon-number {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 14px;
+    line-height: 100%;
+    color: #4C4E5A;
+    cursor: pointer;
+    word-break: break-all
+  }
+
+  &__pop-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: #7165E3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(219, 216, 248, 0.35);
+    border-radius: 3px;
+  }
+
+  &__list-groups-modal {
+    display: inline-block;
+    padding: 7px 6px;
+
+    &:hover {
+      background: rgb(207, 202, 247);
+    }
+  }
+
+  &__group-color-sumra-wallet {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: $pink-text-wallet;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+  }
+
+  &__group-color-sumra-meet {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: $blu-text-meet;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+  }
+
+  &__group-color-sumra-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: $yellow-chat;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 100%;
+  }
+
+  &__group-sumra-wallet {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: $pink-text-wallet;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 36px;
+  }
+
+  &__group-sumra-meet {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: $blu-text-meet;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 36px;
+  }
+
+  &__group-sumra-chat {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    color: $yellow-chat;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 36px;
+  }
+
+  &__list-groups {
+    display: inline-block;
+    background: rgba(219, 216, 248, 0.35);
+    border-radius: 3px;
+    padding: 3px 6px;
+
+  }
+
+  &__list-groups-points {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    font-size: 15px;
+    color: rgb(203, 198, 248);
+  }
+
+  &__block-btn {
+    position: absolute;
+    right: 35px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 20px;
+    min-width: 148px;
+
+    button {
+      &:hover {
+        transform: scale(1.3);
+        transition: transform 0.5s;
+      }
+    }
+
+    a {
+      &:hover {
+        transform: scale(1.3);
+        transition: transform 0.5s;
+      }
+    }
+  }
+
+  &__tr-content {
+    height: 60px;
+    cursor: pointer;
+    border-bottom: 1px solid #EBECF0;
+    background-color: #FFFFFF;
+
+    &:hover {
+      background: #FAFAFC;
+      box-shadow: inset 0px -1px 0px rgba(137, 138, 141, 0.15);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__social-img {
+    display: inline-flex;
+    margin-right: 6px;
+    margin-left: 6px;
+
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__block-pagination {
+    display: flex;
+    margin-top: 33px;
+    align-items: flex-end;
+    gap: 15px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+
+    @media (max-width: 375px) {
+      margin-left: 0;
+    }
+  }
+
+  &__inner-add-people-sumra-meet {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: $blu-text-meet;
+    cursor: pointer;
+  }
+
+  &__inner-add-people-sumra-chat {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: $yellow-chat;
+    cursor: pointer;
+  }
+
+
+  &__inner-add-people-sumra-wallet {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: $pink-text-wallet;
+    cursor: pointer;
+  }
+
+  &__img-arrow {
+    width: 12px;
+  }
+
+  &__show-contacts {
+    margin: 0;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #7A7B85;
+  }
+
+  &__selected-color-sumra-wallet {
+    position: absolute;
+    padding-right: 30px;
+    width: 100%;
+    text-align: end;
+    color: $pink-text-wallet;
+  }
+
+  &__selected-color-sumra-meet {
+    position: absolute;
+    padding-right: 30px;
+    width: 100%;
+    text-align: end;
+    color: $blu-text-meet;
+  }
+
+  &__selected-color-sumra-chat {
+    position: absolute;
+    padding-right: 30px;
+    width: 100%;
+    text-align: end;
+    color: $yellow-chat;
+  }
+}
+
+.contact-book__input-checkbox-sumra-wallet:checked + .contact-book__td-checkbox-sumra-wallet:before {
+  content: "\2713";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $pink-text-wallet;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: white;
+}
+
+.contact-book__input-checkbox-sumra-wallet:disabled + .contact-book__td-checkbox-sumra-wallet:before {
+  background: #eee;
+  color: #aaa;
+}
+
+.contact-book__input-checkbox-sumra-meet:checked + .contact-book__td-checkbox-sumra-meet:before {
+  content: "\2713";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $blu-text-meet;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: white;
+}
+
+.contact-book__input-checkbox-sumra-meet:disabled + .contact-book__td-checkbox-sumra-meet:before {
+  background: #eee;
+  color: #aaa;
+}
+
+.contact-book__input-checkbox-sumra-chat:checked + .contact-book__td-checkbox-sumra-chat:before {
+  content: "\2713";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $yellow-chat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: white;
+}
+
+.contact-book__input-checkbox-sumra-chat:disabled + .contact-book__td-checkbox-sumra-chat:before {
+  background: #eee;
+  color: #aaa;
+}

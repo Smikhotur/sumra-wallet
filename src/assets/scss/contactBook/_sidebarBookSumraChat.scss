@@ -1,0 +1,392 @@
+.contact-book {
+  position: relative;
+
+  &__sidebar-block-sumra-chat {
+    @include sidebar-blok;
+    background: #fafbfc;
+
+    @media (max-width: 1024px) {
+      transform: translateX(-100%);
+    }
+  }
+
+  &__sidebar-block-visible-sumra-chat {
+    @include sidebar-blok;
+    background: #fafbfc;
+    transform: translateX(0);
+  }
+
+  &__logo-img-sumra-chat {
+    max-width: 183px;
+    padding: 0 20px 26px 28px;
+  }
+
+  &__scroll-inner-sumra-chat {
+    @include sidebar-scroll;
+  }
+
+  &__scroll-sumra-chat {
+    @include sidebar-scroll;
+  }
+
+  &__back-sumra-chat {
+    display: inline-flex;
+    margin-bottom: 30px;
+    padding-left: 28px;
+
+    font-size: 13px;
+    align-items: center;
+    color: $gray-text-chat;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    i {
+      padding-right: 14px;
+    }
+
+    &:hover {
+      color: $yellow-chat;
+    }
+  }
+
+  &__title-sidebar-sumra-chat {
+    position: relative;
+    padding-left: 28px;
+    padding-right: 20px;
+
+    @include Font-Family-Inter-SemiBold;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #b0b7c3;
+    line-height: 100%;
+  }
+
+  &__list-nav {
+    padding: 0;
+  }
+
+  &__message-sumra-chat {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: blanchedalmond;
+    font-size: 8px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0;
+  }
+
+  &__message-visible-sumra-chat {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: blanchedalmond;
+    font-size: 8px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    opacity: 1;
+  }
+
+  &__list-group-sumra-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+
+    i {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+
+  &__group-link-sumra-chat {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-group-sumra-chat {
+    list-style-type: none;
+    margin-left: 10px;
+    @include Font-Family-Inter-Medium;
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  &__imput-edit-sumra-chat {
+    height: 21px;
+    width: 110px;
+    outline: none;
+  }
+
+  &__group-del-visible-sumra-chat {
+    display: inline-flex;
+    align-items: center;
+    opacity: 1;
+    padding: 0 5px;
+
+    i {
+      font-size: 17px;
+      color: red;
+    }
+  }
+
+  &__group-del-sumra-chat {
+    opacity: 0;
+  }
+
+  &__add-new-group-sumra-chat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 0 13px 28px;
+    margin-bottom: 7px;
+    @include Font-Family-Inter-SemiBold;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $gray-text-chat;
+    cursor: pointer;
+    text-decoration: none;
+
+    span {
+      color: $gray-text-chat;
+    }
+
+    &:hover {
+      background: #fff;
+      border-radius: 8px;
+      color: $text-hover-chat;
+      margin: 0 16px 7px;
+      padding: 13px 0 13px 12px;
+
+      span {
+        color: $text-hover-chat;
+      }
+
+      i {
+        color: $yellow-chat;
+      }
+    }
+  }
+
+  &__add-new-group-visible-sumra-chat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 0 13px 12px;
+    margin: 0 16px 7px;
+
+    @include Font-Family-Inter-SemiBold;
+
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $text-hover-chat;
+
+    background: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+
+    span {
+      color: $text-hover-chat;
+    }
+
+    i {
+      color: $yellow-chat;
+    }
+  }
+
+  &__add-new-person-sumra-chat {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+  }
+
+  &__btn-import-sumra-chat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 0 28px;
+    margin-bottom: 7px;
+    height: 40px;
+    @include Font-Family-Inter-Medium;
+    font-size: 14px;
+    line-height: 29px;
+    color: $gray-text-chat;
+    text-decoration: none;
+
+    i {
+      color: $gray-text-chat;
+      font-size: 18px;
+    }
+
+    span {
+      color: $gray-text-chat;
+    }
+
+    &:hover {
+      color: $text-hover-chat;
+      background: #fff;
+      border-radius: 8px;
+      margin: 0 16px 7px;
+      padding: 0 12px;
+
+      i {
+        font-size: 18px;
+        color: $yellow-chat;
+      }
+
+      span {
+        color: $text-hover-chat;
+      }
+    }
+  }
+
+  &__more-wrapper-sumra-chat {
+    width: 100%;
+    bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  &__gift-img-sumra-chat {
+    display: block;
+    width: 98px;
+    margin: 0 auto;
+  }
+
+  &__desc-sumra-chat {
+    text-align: center;
+    @include Font-Family-Inter-Medium;
+    font-size: 13px;
+    line-height: 19px;
+    color: #8a94a6;
+    margin-top: 0;
+
+    span {
+      color: $yellow-chat;
+    }
+  }
+
+  &__more-btn-sumra-chat {
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    color: $gray-text-chat;
+    @include Font-Family-Inter-Medium;
+    font-size: 14px;
+    line-height: 29px;
+    height: 40px;
+    text-decoration: none;
+
+    div {
+      display: flex;
+      align-items: center;
+      i {
+        color: $gray-text-chat;
+        padding: 0;
+      }
+
+      li {
+        span {
+          color: $gray-text-chat;
+        }
+      }
+    }
+
+    &:hover {
+      margin: 0 16px;
+      padding: 0 12px;
+      color: $text-hover-chat;
+      background: #fff;
+      border-radius: 8px;
+      div {
+        display: flex;
+        align-items: center;
+
+        i {
+          color: $yellow-chat;
+        }
+
+        li {
+          span {
+            color: $text-hover-chat;
+          }
+        }
+      }
+    }
+  }
+
+  &__more-btn-learn-sumra-chat {
+    width: 128px;
+    height: 36px;
+    color: #fff;
+    @include Font-Family-Inter-Medium;
+    font-size: 14px;
+    line-height: 36px;
+    background: linear-gradient(162.19deg, #fcbf22 0%, #dd7021 92.76%);
+    border-radius: 8px;
+    text-align: center !important;
+    margin: 0 auto;
+    transition: transform 0.7s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &::after {
+      content: '\2192';
+      display: inline-block;
+      padding-left: 8px;
+      color: #fff;
+    }
+  }
+
+  &__more-btn-active-sumra-chat {
+    display: flex;
+    margin: 0 16px;
+    padding: 0 12px;
+    color: $text-hover-chat;
+    height: 40px;
+    @include Font-Family-Inter-Medium;
+    font-size: 14px;
+    line-height: 29px;
+    background: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+
+    div {
+      display: flex;
+      align-items: center;
+
+      i {
+        color: $yellow-chat;
+        padding: 0;
+      }
+
+      li {
+        span {
+          color: $text-hover-chat;
+        }
+      }
+    }
+  }
+}

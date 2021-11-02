@@ -1,0 +1,123 @@
+@mixin Font-Family-Inter-Regular {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin Font-Family-Inter-Medium {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin Font-Family-Inter-SemiBold {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin Font-Family-Inter-Bold {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin Font-Family-DM_Sans-Regular {
+  font-family: DM Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin Font-Family-DM_Sans-Medium {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin Font-Family-DM_Sans-SemiBold {
+  font-family: DM Sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin sidebar-blok {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 240px;
+  padding: 24px 0;
+  height: 100%;
+
+  font-family: "Inter";
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@mixin sidebar-scroll {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 770px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+}
+
+@mixin burger {
+  overflow: hidden;
+  position: absolute;
+  top: 29px;
+  right: -37px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  @media (max-width: 538px) {
+    top: 34px;
+  }
+
+  @media (max-width: 450px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@mixin burger-input {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide input */
+  z-index: 2000000; /* top of the menu */
+
+  @media (max-width: 450px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@mixin burger-span {
+  width: 15px;
+  height: 2px;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  transition: all .5s cubic-bezier(.08,.81,.87,.71);
+
+  @media (max-width: 450px) {
+    width: 15px;
+    height: 2px;
+  }
+}

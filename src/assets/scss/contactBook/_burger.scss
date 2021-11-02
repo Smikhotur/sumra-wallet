@@ -1,0 +1,121 @@
+#menu {
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+  
+#burger-sumra-wallet {
+  @include burger;
+  background: #181a2b;
+}
+
+#burger-sumra-meet {
+  @include burger;
+  background: #377DFF;
+}
+
+#burger-sumra-chat {
+  @include burger;
+  background: #e07821;
+}
+
+#burger-sumra-wallet input {
+  @include burger-input;
+}
+
+#burger-sumra-meet input {
+  @include burger-input;
+}
+
+#burger-sumra-chat input {
+  @include burger-input;
+}
+
+#burger-sumra-wallet span {
+  @include burger-span;
+  background: hsl(0, 11%, 84%);
+}
+
+#burger-sumra-meet span {
+  @include burger-span;
+  background: hsl(0, 0%, 100%);
+}
+
+#burger-sumra-chat span {
+  @include burger-span;
+  background: hsl(0, 0%, 100%);
+}
+
+#span4-sumra-wallet {
+  transform-origin: 4px 0px;
+}
+
+#span6-sumra-wallet {
+  transform-origin: bottom right;
+}
+
+#span4-sumra-meet {
+  transform-origin: 4px 0px;
+}
+
+#span6-sumra-meet {
+  transform-origin: bottom right;
+}
+
+#span4-sumra-chat {
+  transform-origin: 4px 0px;
+}
+
+#span6-sumra-chat {
+  transform-origin: bottom right;
+}
+
+#burger-sumra-wallet input:checked ~ #span4-sumra-wallet {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(42deg) translate(4px, 2px);
+}
+
+#burger-sumra-wallet input:checked ~ #span5-sumra-wallet {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(498deg) translate(1px, -1px);   
+}
+
+#burger-sumra-wallet input:checked ~ #span6-sumra-wallet {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+#burger-sumra-meet input:checked ~ #span4-sumra-meet {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(42deg) translate(4px, 2px);
+}
+
+#burger-sumra-meet input:checked ~ #span5-sumra-meet {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(498deg) translate(1px, -1px);   
+}
+
+#burger-sumra-meet input:checked ~ #span6-sumra-meet {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+#burger-sumra-chat input:checked ~ #span4-sumra-chat {
+  background-color: hsl(0, 0%, 100%);
+  transform: rotate(42deg) translate(4px, 2px);
+}
+
+#burger-sumra-chat input:checked ~ #span5-sumra-chat {
+  background-color: hsl(0, 0%, 100%);
+  transform: rotate(498deg) translate(1px, -1px);   
+}
+
+#burger-sumra-chat input:checked ~ #span6-sumra-chat {
+  background-color: hsl(0, 0%, 100%);
+  transform: rotate(45deg);
+  opacity: 0;
+}

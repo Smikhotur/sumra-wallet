@@ -1,0 +1,91 @@
+.contact-book {
+  &__main-content {
+    padding: 0 30px 30px 270px;
+    // background: hsl(240, 25%, 95%);
+
+    @media (max-width: 1024px) {
+      padding: 0 10px 10px;
+    }
+
+    @media (max-width: 375px) {
+      padding: 0 10px 30px 10px;
+    }
+  }  
+}
+
+#menuNone {
+  position: absolute;
+  left: 240px;
+  z-index: 10002;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+
+  }
+}
+
+#menuToggle {
+  overflow: hidden;
+  position: absolute;
+  top: 17px;
+  right: -47px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #181a2b;
+  border-radius: 50%;
+  
+  @media (max-width: 375px) {
+    right: -47px;
+    top: 18px;
+  }
+}
+
+#menuToggle input {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide input */
+  z-index: 2000000; /* top of the menu */
+}
+
+#menuToggle span{
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background: hsl(0, 11%, 84%);
+  border-radius: 4px;
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+
+#span1 {
+  transform-origin: 4px 0px;
+}
+
+#span3 {
+  transform-origin: bottom right;
+}
+
+#menuToggle input:checked ~ #span1 {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(45deg) translate(6px);
+}
+#menuToggle input:checked ~ #span2 {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(495deg) translate(1px);   
+}
+#menuToggle input:checked ~ #span3 {
+  background-color: hsl(0, 11%, 84%);
+  transform: rotate(45deg);
+  opacity: 0;
+}

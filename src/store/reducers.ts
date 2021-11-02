@@ -7,7 +7,6 @@ import Layout from './layout/reducer';
 import authReducer from './auth/reducer';
 
 // Contact Book
-import reducerContactBook from './contactBook/reducerContactBook';
 
 //Pioneer Memberships
 
@@ -17,14 +16,16 @@ import sidebarReducer from './sidebar/sidebarReducer';
 
 import referralReducer from './referrals/referralsReducer';
 
+import reducerContactBook from './contactBook/reducerContactBook';
+
 const rootReducer = combineReducers({
   // public
   Layout,
   authReducer,
-  reducerContactBook,
   pioneerReducer,
   sidebarReducer,
   referralReducer,
+  reducerContactBook,
 });
 
 type RootReducerType = typeof rootReducer;

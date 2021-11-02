@@ -1,36 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import ContactBook from 'react-contact-book';
-import {Switch, Route} from 'react-router-dom';
-import {connect} from 'react-redux';
+import { Switch, Route, useHistory } from 'react-router-dom';
+import { connect } from 'react-redux';
 // import logoWallet from './assets/images/contactBook/logo.svg';
 // import logoMeet from './assets/images/contactBook/logoMeet.svg';
 // import logoChat from './assets/images/contactBook/logoChat.svg';
-// import photo from './assets/images/contactBook/avatar.png';
+import photo from './assets/images/contactBook/avatar.png';
 // Import Routes all
-import {userRoutes, authRoutes} from './routes/allRoutes';
+import { userRoutes, authRoutes } from './routes/allRoutes';
 // Import all middleware
 import Authmiddleware from './routes/middleware/Authmiddleware';
 // layouts Format
 import VerticalLayout from './components/VerticalLayout/';
 import NonAuthLayout from './components/NonAuthLayout';
-import {PioneerMemberships} from './pages/PioneerMemberships';
+import { PioneerMemberships } from './pages/PioneerMemberships';
 // import {ExportContactsModal} from './pages/ContactBook/ExportContactsModal';
-import {ModalCashbacks} from './pages/Cashbacks/ModalCashbacks';
-import {ModalLeaderboard} from './pages/Leaderboard/ModalLeaderboard';
-import {FormPayment} from './pages/PioneerMemberships/FormPayment';
-import {ModalCongrats} from './pages/PioneerMemberships/ModalCongrats';
-import {Registration} from './pages/Registration';
-import {WalletModal} from './pages/WalletPage/WolletModal/WolletModal';
+import { ModalCashbacks } from './pages/Cashbacks/ModalCashbacks';
+import { ModalLeaderboard } from './pages/Leaderboard/ModalLeaderboard';
+import { FormPayment } from './pages/PioneerMemberships/FormPayment';
+import { ModalCongrats } from './pages/PioneerMemberships/ModalCongrats';
+import { Registration } from './pages/Registration';
+import { WalletModal } from './pages/WalletPage/WolletModal/WolletModal';
 // import {ImportLoaderModal} from './pages/ContactBook/ImportContactsModal/ImportLoaderModal';
 // import {PercentageSentModal} from './pages/ContactBook/SendReferralModal/PercentageSentModal';
 // import {SendModal} from './pages/ContactBook/SendReferralModal/SendModal';
 // import {SendReferralModal} from './pages/ContactBook/SendReferralModal';
-
 import './assets/scss/styleGlobal.scss';
-
+import { RouterInner } from './pages/ContactBook/RouterInner';
+import logoWallet from './assets/images/contactBook/logo.svg';
 const App = (props) => {
-  // const history = useHistory();
+  const history = useHistory();
 
   function getLayout() {
     let layoutCls = VerticalLayout;
@@ -45,21 +45,22 @@ const App = (props) => {
 
   const Layout = getLayout();
 
-  // const setPath = (pathName) => {
-  //   history.push(pathName);
-  // };
+  const setPath = (pathName) => {
+    console.log('Aloha');
+    history.push(pathName);
+  };
 
-  // const config = {
-  //   routes: {
-  //     setPath,
-  //   },
-  //   style: 'sumra-wallet',
-  //   logo: logoWallet,
-  //   header: {
-  //     avatar: photo,
-  //     name: 'Roman Smikhotur',
-  //   },
-  // };
+  const config = {
+    routes: {
+      setPath,
+    },
+    style: 'sumra-wallet',
+    logo: logoWallet,
+    header: {
+      avatar: photo,
+      name: 'Roman Smikhotur',
+    },
+  };
 
   return (
     <React.Fragment>
@@ -76,7 +77,7 @@ const App = (props) => {
           ))}
 
           <Route path="/contact-book">
-            {/* <ContactBook config={config} /> */}
+            <RouterInner config={config} />
           </Route>
           <Route path="/pioneer_memberships" component={PioneerMemberships} />
           <Route path="/registration_page" component={Registration} />

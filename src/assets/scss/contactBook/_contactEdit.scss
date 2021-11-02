@@ -1,0 +1,672 @@
+.contact-edit {
+  position: relative;
+  min-height: calc(100vh - 225px) !important;
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title  {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2E3140;
+    margin: 0;
+
+    @media (max-width: 1024px) {
+      padding-left: 50px;
+    }
+  }
+
+  &__inner-person {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name-person {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #2E3140;
+    margin: 0;
+  }
+
+  &__img-person {
+    margin-left: 33px;
+    margin-right: 10px;
+  }
+
+  &__body {
+    position: relative;
+    margin-top: 128px;
+
+    max-width: 900px;
+    padding: 30px 25px;
+  
+    background: #FFFFFF;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: hsla(246, 69%, 64%, 0.2);
+  }
+
+  &__avatar-img {
+    font-size: 112px;
+  }
+
+  &__block-information {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 40px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #2E3140;
+  }
+
+  &__birthday {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__group-sumra-wallet {
+    display: inline-block;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $pink-text-wallet;
+    padding: 3px 6px;
+    background: rgba(219, 216, 248, 0.35);
+    border-radius: 3px;
+    cursor: pointer;
+
+    a {
+      color: $pink-text-wallet;
+    }
+  }
+
+  &__group-sumra-meet {
+    display: inline-block;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blu-text-meet;
+    padding: 3px 6px;
+    background: rgba(219, 216, 248, 0.35);
+    border-radius: 3px;
+    cursor: pointer;
+
+    a {
+      color: $blu-text-meet;
+    }
+  }
+
+  &__group-sumra-chat {
+    display: inline-block;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $yellow-chat;
+    padding: 3px 6px;
+    background: rgba(248, 248, 212, 0.35);
+    border-radius: 3px;
+    cursor: pointer;
+
+    a {
+      color: $yellow-chat;
+    }
+  }
+
+  &__btn-inner {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+
+  &__icon-inner-sumra-wallet {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0px 5px 20px rgba(88, 86, 104, 0.12), 0px 30px 60px rgba(143, 140, 167, 0.08);
+    border-radius: 4px;
+    border: 2px solid $border-btn-wallet;
+    transition: all 0.4s;
+    cursor: pointer;
+  
+    i {
+      color: $pink-text-wallet;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background-color: $pink-text-wallet;
+      border: 2px solid $pink-text-wallet;
+      transform: scale(1.1);
+
+      i {
+        color: hsl(0, 0%, 100%);
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__icon-inner-sumra-meet {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0px 5px 20px rgba(88, 86, 104, 0.12), 0px 30px 60px rgba(143, 140, 167, 0.08);
+    border-radius: 4px;
+    border: 2px solid $border-btn-meet;
+    transition: all 0.4s;
+    cursor: pointer;
+  
+    i {
+      color: $blu-text-meet;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background-color: $blu-text-meet;
+      border: 2px solid $blu-text-meet;
+      transform: scale(1.1);
+
+      i {
+        color: hsl(0, 0%, 100%);
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__icon-inner-sumra-chat {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0px 5px 20px rgba(88, 86, 104, 0.12), 0px 30px 60px rgba(143, 140, 167, 0.08);
+    border-radius: 4px;
+    border: 2px solid hsla(43, 97%, 58%, 0.5);
+    cursor: pointer;
+  
+    i {
+      color: $yellow-chat;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      background: linear-gradient(162.19deg, #FCBF22 0%, #DD7021 92.76%);
+      box-shadow: 0px 19px 20px rgba(255, 171, 0, 0.17);
+      border: 2px solid hsla(43, 97%, 58%, 0.3);
+
+      i {
+        color: hsl(0, 0%, 100%);
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__icon-inner-active-sumra-wallet {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0px 5px 20px rgba(88, 86, 104, 0.12), 0px 30px 60px rgba(143, 140, 167, 0.08);
+    border-radius: 4px;
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: $pink-text-wallet;
+    border: 2px solid $pink-text-wallet;
+
+    i {
+      color: hsl(0, 0%, 100%);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+
+  &__icon-inner-active-sumra-meet {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0px 5px 20px rgba(88, 86, 104, 0.12), 0px 30px 60px rgba(143, 140, 167, 0.08);
+    border-radius: 4px;
+    transition: all 0.4s;
+    cursor: pointer;
+    background-color: $blu-text-meet;
+    border: 2px solid $blu-text-meet;
+
+    i {
+      color: hsl(0, 0%, 100%);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+
+  &__icon-inner-active-sumra-chat {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0px 5px 20px rgba(88, 86, 104, 0.12), 0px 30px 60px rgba(143, 140, 167, 0.08);
+    border-radius: 4px;
+    transition: all 0.4s;
+    cursor: pointer;
+    background: linear-gradient(162.19deg, #FCBF22 0%, #DD7021 92.76%);
+    box-shadow: 0px 19px 20px rgba(255, 171, 0, 0.17);
+    border: 2px solid hsla(43, 97%, 58%, 0.3);
+
+    i {
+      color: hsl(0, 0%, 100%);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+
+
+  &__list-groups-add {
+    position: absolute;
+    top: 172px;
+    left: 270px;
+    z-index: 10;
+    height: 206px;
+    width: 226px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.20);
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+    letter-spacing: .01428571em;
+    font-family: Roboto, Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    background-color: #fff;
+    color: #202124;
+    animation: group 0.8s linear forwards;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 34px;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #757575;
+    }
+  }
+
+  &__list-all-groups {
+    position: absolute;
+    top: 26px;
+    left: 135px;
+    z-index: 10;
+    height: 206px;
+    width: 226px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.20);
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+
+    letter-spacing: .01428571em;
+    font-family: Roboto, Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    background-color: #fff;
+    color: #202124;
+    animation: group 0.8s linear forwards;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 34px;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #757575;
+    }
+
+    @media(max-width: 1262px) {
+      top: 52px;
+    }
+
+    @media(max-width: 421px) {
+      left: 15%;
+    }
+  }
+
+  &__list-table-groups {
+    height: 206px;
+    width: 226px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.20);
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+
+    letter-spacing: .01428571em;
+    font-family: Roboto, Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    background-color: #fff;
+    color: #202124;
+
+    animation: group 0.8s linear forwards;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 34px;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #757575;
+    }
+
+    @media(max-width: 1262px) {
+      top: 52px;
+    }
+
+    @media(max-width: 421px) {
+      left: 15%;
+    }
+  }
+
+  &__grups-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+
+    text-align: left !important;
+    margin: 0;
+    padding: 0;
+    color: #757575;
+    font-size: 12px;
+  }
+
+  &__list-scroll {
+    height: 140px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__list-inner {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &__item-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__group-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    color: #8A94A6;
+  }
+
+  &__group-btn-inner-sumra-wallet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    color: #4E5A66;
+
+    &:hover {
+      background-color: $pink-text-wallet;
+      color: white;
+      border-radius: 2px;
+    }
+  }
+
+  &__group-btn-inner-sumra-meet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    color: #4E5A66;
+
+    &:hover {
+      background-color: $blu-text-meet;
+      color: white;
+      border-radius: 2px;
+    }
+  }
+
+  &__group-btn-inner-sumra-chat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    color: #4E5A66;
+
+    &:hover {
+      background: linear-gradient(162.19deg, #FCBF22 0%, #DD7021 92.76%);
+      box-shadow: 0px 19px 20px rgba(255, 171, 0, 0.17);
+      color: white;
+      border-radius: 2px;
+    }
+  }
+
+  &__block-desc {
+    padding-top: 25px;
+  }
+
+  &__list-desc {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  &__item-desc {
+    list-style-type: none;
+    margin-bottom: 27px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #7A7B85;
+
+    i {
+      position: relative;
+      right: 20px;
+      color: hsl(226, 7%, 62%);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__block-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 18px;
+    color: #495057;
+  }
+
+  &__btn {
+    padding: 10px 25px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 105%;
+    color: #FFFFFF;
+    background: #7165E3;
+    box-shadow: 0px 10px 20px rgba(97, 105, 255, 0.1), 0px 10px 20px rgba(97, 105, 255, 0.1);
+    border-radius: 5px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.5s;
+    }
+
+    &:active {
+      transform: scale(0.9);
+      transition: transform 0.5s;
+    }
+  }
+
+  &__img-block {
+    position: absolute;
+    right: 25px;
+    top: 180px;
+  }
+}
+
+@keyframes group {
+  0% {
+    opacity: 0;
+    max-width: 0;
+    max-height: 0;
+  }
+
+  100%{
+    opacity: 1;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.message-inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  position: fixed;
+  top: 0;
+  z-index: 999999999;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 260px;
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(2, 2, 32, 0.8);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  animation: messageAnimation 4s ease-out;
+
+  &__title {
+    text-align: center;
+    align-self: center;
+    font-size: 12px;
+    height: 14px;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+    span {
+      color: #7165E3;
+    }
+  }
+}
+
+@keyframes messageAnimation {
+  0%{
+    transform: translate(0, -80px);
+  }
+  50%{
+      transform: translate(0, 80px);
+
+  }
+  100%{
+      transform: translate(0, 80px);
+  }
+}

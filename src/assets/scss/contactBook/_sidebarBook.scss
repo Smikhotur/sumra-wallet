@@ -1,0 +1,317 @@
+.contact-book {
+  position: relative;
+
+  &__sidebar-block-sumra-wallet {
+    @include sidebar-blok;
+    background: #181A2B;
+
+    @media (max-width: 1024px) {
+      transform: translateX(-100%);
+    }
+  }
+
+  &__sidebar-block-visible-sumra-wallet {
+    @include sidebar-blok;
+    background: #181A2B;
+    transform: translateX(0);
+  }
+
+  &__logo-img-sumra-wallet {
+    position: sticky;
+    top: 0;
+    max-width: 183px;
+    padding: 0 20px 26px 28px;
+  }
+
+  &__scroll-sumra-wallet {
+    @include sidebar-scroll;
+  }
+
+  &__back-sumra-wallet {
+    display: inline-flex;
+    margin-bottom: 30px;
+    padding-left: 28px;
+
+    font-size: 13px;
+    align-items: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    i {
+      padding-right: 14px;
+    }
+
+    &:hover {
+      color: #7165E3;
+    }
+  }
+
+  &__title-sidebar-sumra-wallet {
+    position: relative;
+    padding-left: 28px;
+    padding-right: 20px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+
+  &__message-sumra-wallet {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: blanchedalmond;
+    font-size: 8px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0;
+  }
+
+  &__message-visible-sumra-wallet {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: blanchedalmond;
+    font-size: 8px;
+    color: black;
+    font-weight: 300;
+    text-align: center;
+    opacity: 1;
+  }
+
+  &__list-group-sumra-wallet {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+
+    i {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+
+  &__group-link-sumra-wallet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-group-sumra-wallet {
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  &__imput-edit-sumra-wallet {
+    height: 21px;
+    width: 110px;
+    outline: none;
+  }
+
+  &__group-del-visible-sumra-wallet {
+    display: inline-flex;
+    align-items: center;
+    opacity: 1;
+    padding: 0 5px;
+
+    i {
+      font-size: 17px;
+      color: red;
+    }
+  }
+
+  &__group-del-sumra-wallet {
+    opacity: 0;
+  }
+
+  &__add-new-group-sumra-wallet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px 0 13px 28px;
+    margin-bottom: 7px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: all 0.5s linear 0s;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: #FFFFFF;
+      background: #7165E3;
+    }
+  }
+
+
+  &__add-new-group-visible-sumra-wallet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px 0 13px 28px;
+    margin-bottom: 7px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.5);
+    transition: all 0.5s linear 0s;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #7165E3;
+    text-decoration: none;
+  }
+
+  &__add-new-person-sumra-wallet {
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+  }
+
+  &__btn-import-sumra-wallet {
+    display: flex;
+    gap: 10px;
+    padding: 15px 0 15px 28px;
+    margin-bottom: 7px;
+    width: 100%;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 0.5s linear 0s;
+    text-decoration: none;
+    
+    i {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #FFFFFF;
+      background: #7165E3;
+    }
+  }
+
+  &__more-wrapper-sumra-wallet {
+    width: 100%;
+    bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  &__gift-img-sumra-wallet {
+    display: block;
+    width: 98px;
+    margin: 0 auto;
+  }
+
+  &__desc-sumra-wallet {
+    padding-left: 28px;
+    color: #a38cf1;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__more-btn-sumra-wallet {
+    display: flex;
+    width: 100%;
+    padding-left: 28px;
+    color: #FFFFFF;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    transition: all 0.5s linear 0s;
+    text-decoration: none;
+
+    div {
+      i {
+        color: #fafafc;
+      }
+    }
+    &:hover {
+      color: #FFFFFF;
+      background: #7165E3;
+    }
+  }
+
+  &__more-btn-active-sumra-wallet {
+    display: flex;
+    width: 100%;
+    padding-left: 28px;
+    color: #FFFFFF;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    transition: all 0.5s linear 0s;
+    background: #7165E3;
+
+    &:hover {
+      color: #FFFFFF;
+      background: #7165E3;
+    }
+  }
+
+  &__more-btn-learn-sumra-wallet {
+    display: flex;
+    width: 100%;
+    padding-left: 28px;
+    color: #FFFFFF;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    transition: all 0.5s linear 0s;
+    text-decoration: none;
+
+    div {
+      i {
+        color: #fafafc;
+      }
+    }
+    &:hover {
+      color: #FFFFFF;
+      background: #7165E3;
+    }
+  }
+}
