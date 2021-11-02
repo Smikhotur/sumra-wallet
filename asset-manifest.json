@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sumra-wallet/static/css/main.6d1bc5a7.chunk.css",
-    "main.js": "/sumra-wallet/static/js/main.829a6753.chunk.js",
-    "main.js.map": "/sumra-wallet/static/js/main.829a6753.chunk.js.map",
+    "main.js": "/sumra-wallet/static/js/main.c265f508.chunk.js",
+    "main.js.map": "/sumra-wallet/static/js/main.c265f508.chunk.js.map",
     "runtime-main.js": "/sumra-wallet/static/js/runtime-main.4a0600d7.js",
     "runtime-main.js.map": "/sumra-wallet/static/js/runtime-main.4a0600d7.js.map",
     "static/css/2.c7a3ec30.chunk.css": "/sumra-wallet/static/css/2.c7a3ec30.chunk.css",
@@ -204,6 +204,6 @@
     "static/css/2.c7a3ec30.chunk.css",
     "static/js/2.b00eec3a.chunk.js",
     "static/css/main.6d1bc5a7.chunk.css",
-    "static/js/main.829a6753.chunk.js"
+    "static/js/main.c265f508.chunk.js"
   ]
 }
