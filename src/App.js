@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import ContactBook from 'react-contact-book';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 // import logoWallet from './assets/images/contactBook/logo.svg';
