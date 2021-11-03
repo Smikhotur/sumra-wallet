@@ -80,11 +80,6 @@
     font-size: 14px;
     line-height: 135%;
     color: #4E5A66;
-    transition: transform 0.8s;
-
-    &:hover {
-      transform: translate3d(-10px, -10px, 0);
-    }
   }
 
   &__card-visible {
@@ -100,10 +95,6 @@
     font-size: 14px;
     line-height: 135%;
     color: #FFFFFF;
-    transition: transform 0.8s;
-    &:hover {
-      transform: translate3d(-10px, -10px, 0);
-    }
   }
 
   &__card-suggested {

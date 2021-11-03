@@ -1,6 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
+import {
+  Redirect,
+  Route,
+  Switch,
+  useHistory,
+  BrowserRouter as Router,
+} from 'react-router-dom';
 import CursorSpinner from './CursorSpinner/CursorSpinner.jsx';
 import SidebarContactBook from './SidebarContactBook/SidebarContactBook.jsx';
 import AllContacts from './AllContacts/AllContacts.jsx';
@@ -17,6 +23,7 @@ import { MessageFromServer } from './MessageFromServer/MessageFromServer.jsx';
 import actions from '../../store/contactBook/actions';
 import RemoveGroup from './RemoveGroup/RemoveGroup.jsx';
 import '../../assets/scss/contactBook/index.scss';
+import AddNewGroup from './AddNewGroup/AddNewGroup.jsx';
 
 export const RouterInner = ({ config }) => {
   const dispatch = useDispatch();
@@ -135,6 +142,8 @@ export const RouterInner = ({ config }) => {
           <ExportContactsModal {...routerProps} config={config} />
         )}
       />
+      <AddNewGroup config={config} />
+
       <section className={!remove ? 'ask-wrapper' : 'ask-wrapper-visible'}>
         <RemoveGroup
           removeUser={removeUser}

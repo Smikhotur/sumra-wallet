@@ -137,9 +137,9 @@ export const ContactDetails = ({ config }) => {
                     <div className="contact-edit__btn-inner">
                       <div
                         className={`contact-edit__icon-inner-${config?.style}`}
-                        onClick={() => {
-                          handleFavourite(person[0].id);
-                        }}
+                        // onClick={() => {
+                        //   handleFavourite(person[0].id);
+                        // }}
                       >
                         <i
                           title="Add to favorites"

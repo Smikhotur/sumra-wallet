@@ -1,27 +1,25 @@
-import React, {useEffect, useState} from 'react';
-import Close from '../../assets/images/close.png';
-import {useDispatch, useSelector} from 'react-redux';
-import actions from '../../store/contactBook/actions';
-import useOnOutsideClick from '../../custom.hooks/useOnOutsideClick';
+import React, { useEffect, useState } from 'react';
+import Close from '../../../assets/images/contactBook/close.png';
+import { useDispatch, useSelector } from 'react-redux';
+import actions from '../../../store/contactBook/actions';
+import useOnOutsideClick from '../../../custom.hooks/useOnOutsideClick';
 
-const AddNewGroup = ({config}) => {
+const AddNewGroup = ({ config }) => {
   const [visible, setVisible] = useState(false);
   const [textInput, setTextInput] = useState('');
-  const [sms, setSms] = useState(false)
+  const [sms, setSms] = useState(false);
   const dispatch = useDispatch();
-  const groups = useSelector(
-    (state) => state.reducerContactBook.groups
+  const groups = useSelector((state) => state.reducerContactBook.groups);
+  const modalVisible = useSelector((state) => state.reducerContactBook.modal);
+  const { innerBorderRef } = useOnOutsideClick(() =>
+    dispatch(actions.changeModal(false))
   );
-  const modalVisible = useSelector(
-    (state) => state.reducerContactBook.modal
-  );
-  const {innerBorderRef} = useOnOutsideClick(() => dispatch(actions.changeModal(false)));
 
   useEffect(() => {
     dispatch(actions.getGroups());
   }, []);
 
-  const createGroup = ({target: {value}}) => {
+  const createGroup = ({ target: { value } }) => {
     setTextInput(value);
   };
 
@@ -32,7 +30,7 @@ const AddNewGroup = ({config}) => {
       setSms(true);
       setTimeout(() => {
         setSms(false);
-      }, 2000)
+      }, 2000);
       return;
     }
     dispatch(actions.runPreloader(true));
@@ -88,10 +86,11 @@ const AddNewGroup = ({config}) => {
             className="add-group-modal__input"
             type="text"
           />
-         {sms &&
+          {sms && (
             <div className="add-group-modal__sms">
               Characters must be at least three
-            </div>}
+            </div>
+          )}
         </div>
 
         <div className="add-group-modal__block-btn">

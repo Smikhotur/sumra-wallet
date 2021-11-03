@@ -70,6 +70,8 @@ function* PostFetchContactBookWorker(option) {
 
   if (json.type === 'success') {
     yield put(actions.getMassage(json.message));
+  } else {
+    yield put(actions.getMassage(`The server is currently down`));
   }
 }
 
@@ -83,6 +85,8 @@ function* PostAddUserWorker(option) {
         `${json.data.display_name} was added to the contact book`
       )
     );
+  } else {
+    yield put(actions.getMassage(`The server is currently down`));
   }
 }
 
@@ -96,6 +100,8 @@ function* PutAddUserWorker(option) {
         `${json.data.display_name} was added to the contact book`
       )
     );
+  } else {
+    yield put(actions.getMassage(`The server is currently down`));
   }
 }
 
@@ -141,8 +147,11 @@ function* PostFetchContactGroupsWorker(option) {
   const json = yield call(requestContactBook, option);
   yield put(actions.getGroups());
   yield put(actions.runPreloader(false));
+  console.log('Groups');
   if (json.type === 'success') {
     yield put(actions.getMassage(`You have created a ${json.data.name} group`));
+  } else {
+    yield put(actions.getMassage(`The server is currently down`));
   }
 }
 

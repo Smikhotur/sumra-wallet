@@ -513,7 +513,7 @@ const TableContacts = ({ idGroup, config }) => {
                   })}
                 </tbody>
               </table>
-              {allData.total > 10 && (
+              {currentUsers.length > 10 && (
                 <div className="contact-book__block-pagination">
                   <div
                     className={`contact-book__inner-add-people-${config?.style}`}
