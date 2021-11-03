@@ -1,5 +1,5 @@
-import React, {FC, useState} from 'react';
-import {listTransaction} from '../../Dashboard/Transaction/listTransaction';
+import React, { FC, useState } from 'react';
+import { listTransaction } from '../../Dashboard/Transaction/listTransaction';
 import classNames from 'classnames';
 import LineChart from '../../../components/chartjs/linechart';
 import HistorySpent from '../../../components/chartjs/historySpent';

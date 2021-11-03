@@ -1,5 +1,5 @@
-import React, {FC} from 'react';
-import {Link} from 'react-router-dom';
+import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 import icon from '../../../assets/images/memberships/icon.svg';
 import girl from '../../../assets/images/memberships/girl.png';
 import cup from '../../../assets/images/memberships/cup.svg';
@@ -9,10 +9,10 @@ export const Navigation: FC = () => {
   return (
     <div className="memberships__nav-inner">
       <section className="memberships__nav">
-        <Link className="memberships__opasity" to="/dashboard">
+        <Link className="memberships__opasity" to="/sumra-wallet">
           <img src={icon} alt="" className="memberships__icon" />
         </Link>
-        <Link className="memberships__opasity-back" to="/dashboard">
+        <Link className="memberships__opasity-back" to="/sumra-wallet">
           <button className="memberships__back">
             <span className="memberships__arrow-inner">
               <span className="memberships__arrow"></span>
@@ -20,7 +20,7 @@ export const Navigation: FC = () => {
             <span>Back to dashboard</span>
           </button>
         </Link>
-        <Link className="memberships__visible" to="/dashboard">
+        <Link className="memberships__visible" to="/sumra-wallet">
           <button className="memberships__back-visble">
             <span className="memberships__arrow-inner">
               <span className="memberships__arrow"></span>

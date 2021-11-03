@@ -1,8 +1,8 @@
-import React, {FC, useEffect, useState} from 'react';
-import {useDispatch} from 'react-redux';
-import {Link} from 'react-router-dom';
+import React, { FC, useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/images/sumraMenu/Logo.svg';
-import {actions} from '../../../store/sidebar/actions';
+import { actions } from '../../../store/sidebar/actions';
 
 export const SmallMenu: FC = () => {
   const [visible, setVisible] = useState('');
@@ -14,7 +14,7 @@ export const SmallMenu: FC = () => {
     pathname = window.location.pathname;
   }, [window.location.pathname]);
 
-  const checkButton = ({currentTarget: {id}}) => {
+  const checkButton = ({ currentTarget: { id } }) => {
     setVisible(id);
   };
 
@@ -23,17 +23,17 @@ export const SmallMenu: FC = () => {
       <div>
         <img className="img-logo" src={logo} alt="logo" />
         <ul className="metismenu list-unstyled" id="side-menu">
-          <li style={{position: 'relative'}}>
+          <li style={{ position: 'relative' }}>
             <Link
               id="dashboard"
               onMouseOver={checkButton}
               onMouseOut={() => {
                 setVisible('');
               }}
-              style={{position: 'relative'}}
-              to="/dashboard"
+              style={{ position: 'relative' }}
+              to="/sumra-wallet"
               className={
-                pathname.match('/dashboard')
+                pathname.match('/sumra-wallet')
                   ? 'waves-effect link-active-menu'
                   : 'waves-effect'
               }
@@ -44,7 +44,7 @@ export const SmallMenu: FC = () => {
             </Link>
             <div
               className={
-                visible === 'dashboard'
+                visible === 'sumra-wallet'
                   ? 'emergence-name-visible'
                   : 'emergence-name'
               }
@@ -53,7 +53,7 @@ export const SmallMenu: FC = () => {
             </div>
           </li>
 
-          <li style={{position: 'relative'}}>
+          <li style={{ position: 'relative' }}>
             <Link
               id="wallet-page"
               onMouseOver={checkButton}
@@ -480,7 +480,7 @@ export const SmallMenu: FC = () => {
           </li>
         </ul>
       </div>
-      <div style={{position: 'relative'}} className="block-learn-more-small">
+      <div style={{ position: 'relative' }} className="block-learn-more-small">
         <button
           className="btn-small-alone"
           onClick={() => {
@@ -491,13 +491,13 @@ export const SmallMenu: FC = () => {
           onMouseOut={() => {
             setVisible('');
           }}
-          style={{marginLeft: '0'}}
+          style={{ marginLeft: '0' }}
           type="button"
         >
           <i className="icon-exit" />
         </button>
         <div
-          style={{top: '0'}}
+          style={{ top: '0' }}
           className={
             visible === 'expand' ? 'emergence-name-visible' : 'emergence-name'
           }

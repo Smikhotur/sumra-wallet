@@ -1,5 +1,5 @@
-import React, {FC, useState} from 'react';
-import {listTransaction} from './listTransaction';
+import React, { FC, useState } from 'react';
+import { listTransaction } from './listTransaction';
 import LineChart from '../../../components/chartjs/linechart';
 import pic from '../../../assets/images/Dashboard/pic.svg';
 import users from '../../../assets/images/Dashboard/users.svg';

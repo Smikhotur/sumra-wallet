@@ -1,12 +1,12 @@
-import React, {FC, useState} from 'react';
+import React, { FC, useState } from 'react';
 import '@fontsource/dm-mono';
-import {wallets} from '../Dashboard/Wallets/walet';
+import { wallets } from '../Dashboard/Wallets/walet';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import orange from '../../assets/images/Dashboard/orang.jpg';
 import black from '../../assets/images/Dashboard/black.svg';
 import pink from '../../assets/images/Dashboard/pink.svg';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const colors = [orange, black, pink];
 

@@ -1,7 +1,7 @@
-import React, {FC} from 'react';
-import {Wallets} from './Wallets';
-import {Operation} from './Operation';
-import {Transaction} from './Transaction';
+import React, { FC } from 'react';
+import { Wallets } from './Wallets';
+import { Operation } from './Operation';
+import { Transaction } from './Transaction';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import '../../assets/scss/dashboard/dashboard.scss';

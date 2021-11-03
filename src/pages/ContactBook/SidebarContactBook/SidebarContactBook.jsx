@@ -138,7 +138,7 @@ const SidebarContactBook = ({ config }) => {
             <div
               className={`contact-book__back-${config?.style}`}
               onClick={() => {
-                config?.routes.setPath('/dashboard');
+                config?.routes.setPath('/sumra-wallet');
               }}
               onMouseMove={() => {
                 setColorSvg(true);

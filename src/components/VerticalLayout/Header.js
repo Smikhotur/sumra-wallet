@@ -1,17 +1,17 @@
 import PropTypes from 'prop-types';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 // import {useSelector} from 'react-redux';
-import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 // import logo from '../../assets/images/sumraMenu/Logo.svg';
-import {useSelector, RootStateOrAny} from 'react-redux';
+import { useSelector, RootStateOrAny } from 'react-redux';
 
 // import images
 import user from '../../assets/images/users/user.svg';
 import bell from '../../assets/images/users/bell.svg';
 
 //i18n
-import {withTranslation} from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 
 // Redux Store
 import {
@@ -45,7 +45,7 @@ const Header = (props) => {
 
   const onPageChange = (e) => {
     switch (e) {
-      case '/dashboard':
+      case '/sumra-wallet':
         return 'Dashboard';
       case '/wallet-page':
         return 'Wallet';
@@ -92,7 +92,7 @@ const Header = (props) => {
       <header id="page-topbar">
         <div className={smallMenu ? 'navbar-header' : 'navbar-header-small'}>
           <div className="navbar-header-box-title">
-            <h2 className="navbar-header-box-title" style={{margin: '0'}}>
+            <h2 className="navbar-header-box-title" style={{ margin: '0' }}>
               {onPageChange(location.pathname)}
             </h2>
           </div>
@@ -127,7 +127,7 @@ const Header = (props) => {
             <div>
               <Link
                 to="/hub-page"
-                style={{marginRight: '20px', color: '#7165E3'}}
+                style={{ marginRight: '20px', color: '#7165E3' }}
               >
                 HUB
               </Link>
@@ -153,9 +153,9 @@ Header.propTypes = {
 };
 
 const mapStatetoProps = (state) => {
-  const {layoutType, showRightSidebar, leftMenu, leftSideBarType} =
+  const { layoutType, showRightSidebar, leftMenu, leftSideBarType } =
     state.Layout;
-  return {layoutType, showRightSidebar, leftMenu, leftSideBarType};
+  return { layoutType, showRightSidebar, leftMenu, leftSideBarType };
 };
 
 export default connect(mapStatetoProps, {

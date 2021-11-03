@@ -1,13 +1,13 @@
-import React, {FC, useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
-import {useSelector, RootStateOrAny, useDispatch} from 'react-redux';
+import React, { FC, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useSelector, RootStateOrAny, useDispatch } from 'react-redux';
 
 import logo from '../../assets/images/sumraMenu/Logo.svg';
-import {actions} from '../../store/sidebar/actions';
+import { actions } from '../../store/sidebar/actions';
 
 import '../../assets/scss/burger.scss';
 import '../../assets/scss/menu/smallMenu.scss';
-import {SmallMenu} from './SmallMenu';
+import { SmallMenu } from './SmallMenu';
 
 export const SidebarContent: FC = () => {
   // eslint-disable-next-line no-unused-vars
@@ -40,15 +40,15 @@ export const SidebarContent: FC = () => {
               <span id="span3"></span>
             </div>
           </div>
-          <div className="scroll-menu" style={{overflowY: 'scroll'}}>
+          <div className="scroll-menu" style={{ overflowY: 'scroll' }}>
             <div>
               <img src={logo} alt="logo" />
               <ul className="metismenu list-unstyled" id="side-menu">
                 <li>
                   <Link
-                    to="/dashboard"
+                    to="/sumra-wallet"
                     className={
-                      pathname.match('/dashboard')
+                      pathname.match('/sumra-wallet')
                         ? 'waves-effect link-active-menu'
                         : 'waves-effect'
                     }
@@ -295,7 +295,7 @@ export const SidebarContent: FC = () => {
                 onClick={() => {
                   dispatch(actions.activeSmallMenu(false));
                 }}
-                style={{marginLeft: '100px'}}
+                style={{ marginLeft: '100px' }}
                 type="button"
               >
                 <i className="icon-enter" />
@@ -304,7 +304,7 @@ export const SidebarContent: FC = () => {
           </div>
         </div>
       ) : (
-        <div style={{overflowY: 'scroll'}} id="sidebar-menu-small">
+        <div style={{ overflowY: 'scroll' }} id="sidebar-menu-small">
           <SmallMenu />
         </div>
       )}

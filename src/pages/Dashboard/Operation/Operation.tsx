@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 import arrowUp from '../../../assets/images/Dashboard/arrowUp.svg';
 import arrowDown from '../../../assets/images/Dashboard/arrowDown.svg';
 import arrowsLeftRight from '../../../assets/images/Dashboard/arrowsLeftRight.svg';

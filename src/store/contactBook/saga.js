@@ -42,6 +42,7 @@ const requestPostContactBook = (option) => {
 };
 
 function* getContactBookWorker(option) {
+  // eslint-disable-next-line no-unused-vars
   const json = yield call(requestContactBook, option);
   console.log(data);
   // if (json.data !== undefined) {
