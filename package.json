@@ -1,7 +1,7 @@
 {
   "name": "sumra-wallet",
   "version": "0.1.0",
-  "homepage": "https://Smikhotur.github.io/sumra-wallet",
+  "homepage": "https://Smikhotur.github.io/dashboard",
   "private": true,
   "dependencies": {
     "@fontsource/aileron": "^4.4.5",
