@@ -110,7 +110,7 @@ export const SidebarContent: FC = () => {
 
                 <li>
                   <Link
-                    to="/sumra_pay-page"
+                    to="/peer-membership"
                     className={
                       pathname.match('/sumra_pay-page')
                         ? 'waves-effect link-active-menu'
@@ -120,13 +120,13 @@ export const SidebarContent: FC = () => {
                     <div>
                       <i className="icon-sumra-pay" />
                     </div>
-                    <span>Sumra Pay</span>
+                    <span>Peer Membership</span>
                   </Link>
                 </li>
 
                 <li>
                   <Link
-                    to="/sumra_card-page"
+                    to="/lydian-membership"
                     className={
                       pathname.match('/sumra_card-page')
                         ? 'waves-effect link-active-menu'
@@ -136,7 +136,7 @@ export const SidebarContent: FC = () => {
                     <div>
                       <i className="icon-sumra-card" />
                     </div>
-                    <span>Sumra Card</span>
+                    <span>Lydian Membership</span>
                   </Link>
                 </li>
 

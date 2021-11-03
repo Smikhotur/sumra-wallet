@@ -2,32 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
-// import logoWallet from './assets/images/contactBook/logo.svg';
-// import logoMeet from './assets/images/contactBook/logoMeet.svg';
-// import logoChat from './assets/images/contactBook/logoChat.svg';
 import photo from './assets/images/contactBook/avatar.png';
-// Import Routes all
 import { userRoutes, authRoutes } from './routes/allRoutes';
-// Import all middleware
 import Authmiddleware from './routes/middleware/Authmiddleware';
-// layouts Format
 import VerticalLayout from './components/VerticalLayout/';
 import NonAuthLayout from './components/NonAuthLayout';
+import { PeerMembership } from './pages/PeerMembership/PeerMembership';
 import { PioneerMemberships } from './pages/PioneerMemberships';
-// import {ExportContactsModal} from './pages/ContactBook/ExportContactsModal';
 import { ModalCashbacks } from './pages/Cashbacks/ModalCashbacks';
 import { ModalLeaderboard } from './pages/Leaderboard/ModalLeaderboard';
 import { FormPayment } from './pages/PioneerMemberships/FormPayment';
 import { ModalCongrats } from './pages/PioneerMemberships/ModalCongrats';
 import { Registration } from './pages/Registration';
 import { WalletModal } from './pages/WalletPage/WolletModal/WolletModal';
-// import {ImportLoaderModal} from './pages/ContactBook/ImportContactsModal/ImportLoaderModal';
-// import {PercentageSentModal} from './pages/ContactBook/SendReferralModal/PercentageSentModal';
-// import {SendModal} from './pages/ContactBook/SendReferralModal/SendModal';
-// import {SendReferralModal} from './pages/ContactBook/SendReferralModal';
+import { LydianMembership } from './pages/LydianMembership';
 import './assets/scss/styleGlobal.scss';
 import { RouterInner } from './pages/ContactBook/RouterInner';
 import logoWallet from './assets/images/contactBook/logo.svg';
+import './assets/scss/peer/style.scss';
+import './assets/scss/lydian/style.scss';
 const App = (props) => {
   const history = useHistory();
 
@@ -74,13 +67,13 @@ const App = (props) => {
               isAuthProtected={false}
             />
           ))}
-
           <Route path="/contact-book">
             <RouterInner config={config} />
           </Route>
           <Route path="/pioneer_memberships" component={PioneerMemberships} />
           <Route path="/registration_page" component={Registration} />
-
+          <Route path="/peer-membership" component={PeerMembership} />
+          <Route path="/lydian-membership" component={LydianMembership} />
           {userRoutes.map((route, idx) => (
             <Authmiddleware
               path={route.path}
@@ -92,12 +85,6 @@ const App = (props) => {
             />
           ))}
         </Switch>
-        {/* <Route path="/" component={SendReferralModal} />
-        <Route path="/" component={SendModal} />
-        <Route path="/" component={PercentageSentModal} /> */}
-        {/* <Route path="/" component={ImportContactsModal} /> */}
-        {/* <Route path="/" component={ExportContactsModal} />
-        <Route path="/" component={ImportLoaderModal} /> */}
         <Route path="/" component={ModalCashbacks} />
         <Route path="/" component={ModalLeaderboard} />
         <Route path="/" component={FormPayment} />

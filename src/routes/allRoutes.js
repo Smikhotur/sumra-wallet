@@ -11,8 +11,6 @@ import { Dashboard } from '../pages/Dashboard';
 import { WalletPage } from '../pages/WalletPage';
 import { Payments } from '../pages/Payments';
 import { History } from '../pages/History';
-import { SumraPayPage } from '../pages/SumraPayPage';
-import { SumraCardPage } from '../pages/SumraCardPage';
 import { Cashbacks } from '../pages/Cashbacks';
 import { CreditlinePage } from '../pages/CreditlinePage/CreditlinePage';
 import { Rentpayments } from '../pages/Rentpayments';
@@ -30,8 +28,6 @@ const userRoutes = [
   { path: '/wallet-page', component: WalletPage },
   { path: '/payments', component: Payments },
   { path: '/history', component: History },
-  { path: '/sumra_pay-page', component: SumraPayPage },
-  { path: '/sumra_card-page', component: SumraCardPage },
   { path: '/cashbacks-page', component: Cashbacks },
   { path: '/creditline-page', component: CreditlinePage },
   { path: '/rentpayments-page', component: Rentpayments },

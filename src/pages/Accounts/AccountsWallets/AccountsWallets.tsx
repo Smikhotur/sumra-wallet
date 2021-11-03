@@ -1,6 +1,6 @@
-import React, {FC, useState} from 'react';
+import React, { FC, useState } from 'react';
 import '@fontsource/dm-mono';
-import {wallets} from '../../Dashboard/Wallets/walet';
+import { wallets } from '../../Dashboard/Wallets/walet';
 
 import orange from '../../../assets/images/Dashboard/orang.jpg';
 import black from '../../../assets/images/Dashboard/black.svg';

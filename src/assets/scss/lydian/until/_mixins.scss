@@ -1,0 +1,145 @@
+@mixin Font-Family-Bigilla {
+  font-family: Bigilla, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin Font-Family-Inter-Regular {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin Font-Family-Inter-Medium {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin Font-Family-Inter-SemiBold {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin Font-Family-Inter-Bold {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin Font-Family-DM-Sans-Regular {
+  font-family: DM Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin Font-Family-DM-Sans-Medium {
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin Font-Family-DM-Sans-Bold {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin Font-Family-Sans-Serif-Bold {
+  font-family: Noto-Serif, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin animationCardPeer {
+  display: inline-block;
+  padding: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(24, 16, 89, 0.07);
+  border-radius: 16px;
+  transition: all 0.6s;
+
+  &:hover {
+    transform: translate3d(0, -42px, 0);
+    background: url(../../image//peer/cardback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h3 {
+      color: #fff !important;
+    }
+
+    li {
+      div {
+        color: #fff !important;
+
+        span {
+          color: #fff !important;
+        }
+      }
+    }
+
+    div {
+      color: #fff !important;
+      
+      span {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+@mixin animationCardLydian {
+  display: inline-block;
+  padding: 31px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(24, 16, 89, 0.07);
+  border-radius: 16px;
+  transition: all 0.6s;
+
+  &:hover {
+    transform: scaleY(1.05);
+    transform-origin: top;
+    background: linear-gradient(135deg, rgba(47, 91, 233, 0.5) 0%, rgba(235, 243, 255, 0.5) 100%), #2F5BE9;
+
+    h3 {
+      color: #fff !important;
+    }
+
+    li {
+      div {
+        color: #fff !important;
+
+        span {
+          color: #fff !important;
+        }
+      }
+    }
+
+    div {
+      color: #F7DB53 !important;
+      
+      span {
+        color: #F7DB53 !important;
+      }
+    }
+    
+    h4 {
+      color: #FFFFFF;
+    }
+
+    button {
+      background: linear-gradient(222.31deg, #DE2EFF 12.68%, #0177FB 79.08%, #0177FB 100%);
+      box-shadow: 0px 3px 14px rgba(47, 91, 233, 0.3);
+      border-radius: 4px;
+      border: none;
+      color: #FFFFFF;
+      transition: transform 0.6s;
+
+      &:hover {
+       transform: scale(1.05);
+      }
+    }
+  }
+}
