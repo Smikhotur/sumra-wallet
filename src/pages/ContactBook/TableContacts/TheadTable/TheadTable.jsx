@@ -6,17 +6,17 @@ export const TheadTable = () => (
     <th className="contact-book__th">Full name</th>
     <th className="contact-book__th contact-book__th-email">
       Email
-      {/* <img className="contact-book__arrow-img" src={arrows} alt="sort" /> */}
+      <img className="contact-book__arrow-img" src={arrows} alt="sort" />
     </th>
-    <th className="contact-book__th contact-book__th-phone">
+    <th className="">
       Phone number
       <img className="contact-book__arrow-img" src={arrows} alt="sort" />
     </th>
-    <th className="contact-book__th contact-book__th-social">
+    <th className="">
       Social media profile
       <img className="contact-book__arrow-img" src={arrows} alt="sort" />
     </th>
-    <th className="contact-book__th contact-book__th-groups">
+    <th className="">
       Groups
       <img className="contact-book__arrow-img" src={arrows} alt="sort" />
     </th>

@@ -14,10 +14,12 @@ const HeaderAllContacts = ({ config }) => {
   const [textValue, setTextValue] = useState('');
   const [defaultSelect, setDefaultSelect] = useState('A-Z');
   const [idGroup, setIdGroup] = useState([]);
+  people.sort((personA, personB) =>
+    personA.display_name.localeCompare(personB.display_name)
+  );
   // const people = useSelector((state) => state.reducerContactBook.users);
   // const people = useSelector((state) => state.reducerContactBook.users);
   const groups = useSelector((state) => state.reducerContactBook.groups);
-
   const allData = useSelector((state) => state.reducerContactBook.data);
 
   const findUser = ({ target: { value } }) => {
@@ -42,6 +44,7 @@ const HeaderAllContacts = ({ config }) => {
   let pathname = window.location.pathname;
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     pathname = window.location.pathname;
     dispatch(actions.setOpenContactDetails(false));
     dispatch(actions.setFilterGroups(''));

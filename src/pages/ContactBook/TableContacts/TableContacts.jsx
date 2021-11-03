@@ -404,7 +404,6 @@ const TableContacts = ({ idGroup, config }) => {
                     />
                   ) : (
                     <TheadTable />
-                    // <div></div>
                   )}
                 </thead>
                 <tbody
