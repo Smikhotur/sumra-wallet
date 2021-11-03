@@ -1,6 +1,6 @@
 # Sumra Wallet
 
-- [DEMO LINK](https://Smikhotur.github.io/sumra-wallet/)
+- [DEMO LINK](https://Smikhotur.github.io/sumra-wallet)
 
 # Used Technologies and methodologies:
 
