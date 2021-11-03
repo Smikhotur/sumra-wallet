@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/sumra-wallet/static/css/main.6d1bc5a7.chunk.css",
-    "main.js": "/sumra-wallet/static/js/main.c265f508.chunk.js",
-    "main.js.map": "/sumra-wallet/static/js/main.c265f508.chunk.js.map",
+    "main.js": "/sumra-wallet/static/js/main.dfba060d.chunk.js",
+    "main.js.map": "/sumra-wallet/static/js/main.dfba060d.chunk.js.map",
     "runtime-main.js": "/sumra-wallet/static/js/runtime-main.4a0600d7.js",
     "runtime-main.js.map": "/sumra-wallet/static/js/runtime-main.4a0600d7.js.map",
     "static/css/2.c7a3ec30.chunk.css": "/sumra-wallet/static/css/2.c7a3ec30.chunk.css",
-    "static/js/2.b00eec3a.chunk.js": "/sumra-wallet/static/js/2.b00eec3a.chunk.js",
-    "static/js/2.b00eec3a.chunk.js.map": "/sumra-wallet/static/js/2.b00eec3a.chunk.js.map",
+    "static/js/2.17e71d79.chunk.js": "/sumra-wallet/static/js/2.17e71d79.chunk.js",
+    "static/js/2.17e71d79.chunk.js.map": "/sumra-wallet/static/js/2.17e71d79.chunk.js.map",
     "index.html": "/sumra-wallet/index.html",
     "static/css/2.c7a3ec30.chunk.css.map": "/sumra-wallet/static/css/2.c7a3ec30.chunk.css.map",
     "static/css/main.6d1bc5a7.chunk.css.map": "/sumra-wallet/static/css/main.6d1bc5a7.chunk.css.map",
-    "static/js/2.b00eec3a.chunk.js.LICENSE.txt": "/sumra-wallet/static/js/2.b00eec3a.chunk.js.LICENSE.txt",
+    "static/js/2.17e71d79.chunk.js.LICENSE.txt": "/sumra-wallet/static/js/2.17e71d79.chunk.js.LICENSE.txt",
     "static/media/1.489c84e0.svg": "/sumra-wallet/static/media/1.489c84e0.svg",
     "static/media/GlobalEarningsMain.scss": "/sumra-wallet/static/media/1234.d2f270a1.svg",
     "static/media/1st.8f73f925.svg": "/sumra-wallet/static/media/1st.8f73f925.svg",
@@ -202,8 +202,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a0600d7.js",
     "static/css/2.c7a3ec30.chunk.css",
-    "static/js/2.b00eec3a.chunk.js",
+    "static/js/2.17e71d79.chunk.js",
     "static/css/main.6d1bc5a7.chunk.css",
-    "static/js/main.c265f508.chunk.js"
+    "static/js/main.dfba060d.chunk.js"
   ]
 }
